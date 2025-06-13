@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Babu Bhaiya - BTech PYQ Download</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+    .container {
+      padding: 20px;
+      background-color: rgba(0, 51, 102, 0.85);
+      max-width: 600px;
+      margin: 50px auto;
+      border-radius: 15px;
+    }
+    h1 {
+      text-align: center;
+    }
+    select, button {
+      width: 100%;
+      padding: 12px;
+      margin: 15px 0;
+      border-radius: 10px;
+      border: none;
+      font-size: 16px;
+    }
+    select {
+      background-color: #e6f0ff;
+      color: #000;
+    }
+    button {
+      background-color: #001f4d;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📚 Babu Bhaiya - PYQ Downloader</h1>
+
+    <label for="branch">Select Branch</label>
+    <select id="branch" onchange="showExamOptions()">
+      <option value="">--Select Branch--</option>
+      <option value="CSE">Computer Science</option>
+      <option value="MECHANICAL">Mechanical</option>
+    </select>
+
+    <div id="examDiv" style="display:none;">
+      <label for="semester">Select Semester</label>
+      <select id="semester" onchange="showSubjects()">
+        <option value="">--Select Semester--</option>
+        <option value="3rd">3rd Semester</option>
+      </select>
+    </div>
+
+    <div id="subjectDiv" style="display:none;">
+      <label for="subject">Select Subject</label>
+      <select id="subject" onchange="showYears()">
+        <option value="">--Select Subject--</option>
+        <option value="DSA">DSA</option>
+        <option value="Technical Writing">Technical Writing</option>
+      </select>
+    </div>
+
+    <div id="yearDiv" style="display:none;">
+      <label for="year">Select Year</label>
+      <select id="year" onchange="enableDownload()">
+        <option value="">--Select Year--</option>
+        <option value="2019">2019</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+      </select>
+    </div>
+
+    <div id="downloadDiv" style="display:none;">
+      <button onclick="downloadFile()">Download</button>
+    </div>
+  </div>
+
+  <script>
+    let data = null;
+
+    fetch("https://raw.githubusercontent.com/adityarrsdce/pyq-pdfs/refs/heads/main/pyq.json")
+      .then(response => response.json())
+      .then(json => data = json)
+      .catch(() => alert("Failed to load data."));
+
+    function showExamOptions() {
+      document.getElementById("examDiv").style.display = "block";
+      document.getElementById("subjectDiv").style.display = "none";
+      document.getElementById("yearDiv").style.display = "none";
+      document.getElementById("downloadDiv").style.display = "none";
+    }
+
+    function showSubjects() {
+      document.getElementById("subjectDiv").style.display = "block";
+      document.getElementById("yearDiv").style.display = "none";
+      document.getElementById("downloadDiv").style.display = "none";
+    }
+
+    function showYears() {
+      document.getElementById("yearDiv").style.display = "block";
+      document.getElementById("downloadDiv").style.display = "none";
+    }
+
+    function enableDownload() {
+      document.getElementById("downloadDiv").style.display = "block";
+    }
+
+    function downloadFile() {
+      const branch = document.getElementById("branch").value;
+      const semester = document.getElementById("semester").value;
+      const subject = document.getElementById("subject").value;
+      const year = document.getElementById("year").value;
+
+      if (!branch || !semester || !subject || !year || !data) {
+        alert("Please select all fields.");
+        return;
+      }
+
+      try {
+        const url = data.branches[branch][semester][subject][year];
+        if (!url) {
+          alert("File not found for selected options.");
+          return;
+        }
+
+        // 👉 Ad logic placeholder
+        alert("Ad showing here..."); // Replace with AdSense or other ad service logic
+
+        const downloadLink = document.createElement('a');
+        downloadLink.href = url;
+        downloadLink.target = "_blank";
+        downloadLink.click();
+      } catch (err) {
+        alert("Invalid selection.");
+      }
+    }
+  </script>
+</body>
+</html>
