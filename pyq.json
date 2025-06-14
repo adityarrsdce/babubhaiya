@@ -1,11 +1,99 @@
 {
   "branches": {
     "CSE": {
-      "3rd": {
-        "DSA": {
-          "2019": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/3rd/dsa/DSA-2019.pdf?download"
+      "1st Semester": {
+        "MATHS": {
+          "2021": ""
         }
-      }
+      },
+      "2nd Semester": {},
+      "3rd Semester": {
+        "Technical Writing": {
+          "2019": "https://drive.google.com/file/d/1eyKqsGTAP8EEESAIF4NBBGZSgCB6Unej/view?usp=drive_link",
+          "2022": "https://drive.google.com/file/d/1ezbcPAzv3WuwI54jcWDBfBkGS8hK7F31/view?usp=drive_link",
+          "2023": "https://drive.google.com/file/d/1euwWmihTPCMjLrVRzQ0r82yaXgoF3mmM/view?usp=drive_link"
+        },
+        "DSA": {
+          "2019": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/3rd/dsa/DSA-2019.pdf?download",
+          "2020": "https://drive.google.com/file/d/1CE5X0rexqcZw-SVQGNKRtXNVY6AdOSuB/view?usp=drive_link",
+          "2021": "https://drive.google.com/file/d/1DdunP0csVaTypMjMxddVjkK_HW4l6Iwz/view?usp=drive_link",
+          "2022": "https://drive.google.com/file/d/15K9_3JIQhlV-SJRxpku4qCpurg6H9jC_/view?usp=drive_link",
+          "2023": "https://drive.google.com/file/d/1f1ALX6Sy26MaU4nWVZ-yFkj8D6l-ZRsk/view?usp=drive_link"
+        },
+        "Maths": {
+          "2020": "https://drive.google.com/file/d/1ekg33vt_BLWgJRt-EhH-0xujZ2esAS6y/view?usp=drive_link",
+          "2021": "https://drive.google.com/file/d/1DdunP0csVaTypMjMxddVjkK_HW4l6Iwz/view?usp=drive_link",
+          "2022": "https://drive.google.com/file/d/1ercSZPONrhGouWaJTJVmNU7sBCm189RX/view?usp=drive_link"
+        },
+        "Object Oriented Programming": {
+          "2019": "https://drive.google.com/file/d/1eLuq4er9F4ksRyEzF4CzmgkFghAZT288/view?usp=drive_link",
+          "2020": "https://drive.google.com/file/d/1eJCPIqbNsbftlH05ipP6Uab1N7QCv_5x/view?usp=drive_link",
+          "2022": "https://drive.google.com/file/d/1eR0rpPROZQ1_uX5KsWyqkgp2DTvpWSKl/view?usp=drive_link",
+          "2023": "https://drive.google.com/file/d/1f1ZGnfVqY-doHzMj8B6reqW2K25OVQl3/view?usp=drive_link"
+        },
+        "Analog Electronic Circuits": {
+          "2019": "https://drive.google.com/file/d/1ejCdIBC8iznDEET9XcXrV1O5ox3pZNjf/view?usp=drive_link",
+          "2021": "https://drive.google.com/file/d/1ekPYcQyOzAaXwjsJDBOGSxA4PLxLmvTV/view?usp=drive_link",
+          "2022": "https://drive.google.com/file/d/1efKKrULdFcRbYBGJKuR9r0vOE8DaEC_6/view?usp=drive_link",
+          "2023": "https://drive.google.com/file/d/1eSn4_WmDZLPHXurAOgZkDzDY_pRnMZN5/view?usp=drive_link"
+        }
+      },
+      "4th Semester": {},
+      "5th Semester": {},
+      "6th Semester": {},
+      "7th Semester": {},
+      "8th Semester": {}
+    },
+    "EEE": {
+      "1st Semester": {},
+      "2nd Semester": {},
+      "3rd Semester": {},
+      "4th Semester": {},
+      "5th Semester": {},
+      "6th Semester": {},
+      "7th Semester": {},
+      "8th Semester": {}
+    },
+    "CHEMICAL": {
+      "1st Semester": {},
+      "2nd Semester": {},
+      "3rd Semester": {},
+      "4th Semester": {},
+      "5th Semester": {},
+      "6th Semester": {},
+      "7th Semester": {},
+      "8th Semester": {}
+    },
+    "MECHANICAL": {
+      "1st Semester": {},
+      "2nd Semester": {},
+      "3rd Semester": {
+        "Machine Drawing": {},
+        "Maths ||| (PDE,PROBABILITY AND STATISTICS)": {},
+        "Biology": {},
+        "Basic Electronics Engineering": {},
+        "Engineering Mechanics": {
+          "2019": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/MECHANICAL/3rd/Engineering%20Mechanics%20/Engineering%20Mechanics.pdf"
+        },
+        "Thermodynamics": {
+          "2019": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/MECHANICAL/3rd/Thermodynamics%20/Thermodynamics.pdf"
+        }
+      },
+      "4th Semester": {},
+      "5th Semester": {},
+      "6th Semester": {},
+      "7th Semester": {},
+      "8th Semester": {}
+    },
+    "CIVIL": {
+      "1st Semester": {},
+      "2nd Semester": {},
+      "3rd Semester": {},
+      "4th Semester": {},
+      "5th Semester": {},
+      "6th Semester": {},
+      "7th Semester": {},
+      "8th Semester": {}
     }
   }
 }
