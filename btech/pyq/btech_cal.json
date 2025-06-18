@@ -1,20 +1,11 @@
 {
   "branches": {
     "CSE": {
-      "1st Semester": {
-        "DSA": "https://example.com/cse-1-dsa.pdf",
-        "Maths": "https://example.com/cse-1-maths.pdf"
-      },
-      "2nd Semester": {
-        "OOP": "https://example.com/cse-2-oop.pdf",
-        "Physics": "https://example.com/cse-2-physics.pdf"
-      }
+      "1st Semester": "https://example.com/event1.pdf",
+      "2nd Semester": "https://example.com/event2.pdf"
     },
     "ECE": {
-      "1st Semester": {
-        "Basic Electronics": "https://example.com/ece-1-be.pdf",
-        "Maths": "https://example.com/ece-1-maths.pdf"
-      }
+      "1st Semester": "https://example.com/event3.pdf"
     }
   }
 }
