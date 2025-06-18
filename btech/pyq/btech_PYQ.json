@@ -1,0 +1,99 @@
+{
+  "BRANCHES": {
+    "CSE": {
+      "1ST SEMESTER": {
+        "MATHS": {
+          "2021": ""
+        }
+      },
+      "2ND SEMESTER": {},
+      "3RD SEMESTER": {
+        "TECHNICAL WRITING": {
+          "2019": "https://drive.google.com/file/d/1eyKqsGTAP8EEESAIF4NBBGZSgCB6Unej/view?usp=drive_link",
+          "2022": "https://drive.google.com/file/d/1ezbcPAzv3WuwI54jcWDBfBkGS8hK7F31/view?usp=drive_link",
+          "2023": "https://drive.google.com/file/d/1euwWmihTPCMjLrVRzQ0r82yaXgoF3mmM/view?usp=drive_link"
+        },
+        "DSA": {
+          "2019": "https://drive.google.com/file/d/1WDi-lS7wzThVVFk497Xzb5_fWwcdGzv2/view?usp=drive_link",
+          "2020": "https://drive.google.com/file/d/1CE5X0rexqcZw-SVQGNKRtXNVY6AdOSuB/view?usp=drive_link",
+          "2021": "https://drive.google.com/file/d/1DdunP0csVaTypMjMxddVjkK_HW4l6Iwz/view?usp=drive_link",
+          "2022": "https://drive.google.com/file/d/15K9_3JIQhlV-SJRxpku4qCpurg6H9jC_/view?usp=drive_link",
+          "2023": "https://drive.google.com/file/d/1f1ALX6Sy26MaU4nWVZ-yFkj8D6l-ZRsk/view?usp=drive_link"
+        },
+        "MATHS": {
+          "2020": "https://drive.google.com/file/d/1ekg33vt_BLWgJRt-EhH-0xujZ2esAS6y/view?usp=drive_link",
+          "2021": "https://drive.google.com/file/d/1DdunP0csVaTypMjMxddVjkK_HW4l6Iwz/view?usp=drive_link",
+          "2022": "https://drive.google.com/file/d/1ercSZPONrhGouWaJTJVmNU7sBCm189RX/view?usp=drive_link"
+        },
+        "OBJECT ORIENTED PROGRAMMING": {
+          "2019": "https://drive.google.com/file/d/1eLuq4er9F4ksRyEzF4CzmgkFghAZT288/view?usp=drive_link",
+          "2020": "https://drive.google.com/file/d/1eJCPIqbNsbftlH05ipP6Uab1N7QCv_5x/view?usp=drive_link",
+          "2022": "https://drive.google.com/file/d/1eR0rpPROZQ1_uX5KsWyqkgp2DTvpWSKl/view?usp=drive_link",
+          "2023": "https://drive.google.com/file/d/1f1ZGnfVqY-doHzMj8B6reqW2K25OVQl3/view?usp=drive_link"
+        },
+        "ANALOG ELECTRONIC CIRCUITS": {
+          "2019": "https://drive.google.com/file/d/1ejCdIBC8iznDEET9XcXrV1O5ox3pZNjf/view?usp=drive_link",
+          "2021": "https://drive.google.com/file/d/1ekPYcQyOzAaXwjsJDBOGSxA4PLxLmvTV/view?usp=drive_link",
+          "2022": "https://drive.google.com/file/d/1efKKrULdFcRbYBGJKuR9r0vOE8DaEC_6/view?usp=drive_link",
+          "2023": "https://drive.google.com/file/d/1eSn4_WmDZLPHXurAOgZkDzDY_pRnMZN5/view?usp=drive_link"
+        }
+      },
+      "4TH SEMESTER": {},
+      "5TH SEMESTER": {},
+      "6TH SEMESTER": {},
+      "7TH SEMESTER": {},
+      "8TH SEMESTER": {}
+    },
+    "EEE": {
+      "1ST SEMESTER": {},
+      "2ND SEMESTER": {},
+      "3RD SEMESTER": {},
+      "4TH SEMESTER": {},
+      "5TH SEMESTER": {},
+      "6TH SEMESTER": {},
+      "7TH SEMESTER": {},
+      "8TH SEMESTER": {}
+    },
+    "CHEMICAL": {
+      "1ST SEMESTER": {},
+      "2ND SEMESTER": {},
+      "3RD SEMESTER": {},
+      "4TH SEMESTER": {},
+      "5TH SEMESTER": {},
+      "6TH SEMESTER": {},
+      "7TH SEMESTER": {},
+      "8TH SEMESTER": {}
+    },
+    "MECHANICAL": {
+      "1ST SEMESTER": {},
+      "2ND SEMESTER": {},
+      "3RD SEMESTER": {
+        "MACHINE DRAWING": {},
+        "MATHS ||| (PDE,PROBABILITY AND STATISTICS)": {},
+        "BIOLOGY": {},
+        "BASIC ELECTRONICS ENGINEERING": {},
+        "ENGINEERING MECHANICS": {
+          "2019": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/MECHANICAL/3rd/Engineering%20Mechanics%20/Engineering%20Mechanics.pdf"
+        },
+        "THERMODYNAMICS": {
+          "2019": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/MECHANICAL/3rd/Thermodynamics%20/Thermodynamics.pdf"
+        }
+      },
+      "4TH SEMESTER": {},
+      "5TH SEMESTER": {},
+      "6TH SEMESTER": {},
+      "7TH SEMESTER": {},
+      "8TH SEMESTER": {}
+    },
+    "CIVIL": {
+      "1ST SEMESTER": {},
+      "2ND SEMESTER": {},
+      "3RD SEMESTER": {},
+      "4TH SEMESTER": {},
+      "5TH SEMESTER": {},
+      "6TH SEMESTER": {},
+      "7TH SEMESTER": {},
+      "8TH SEMESTER": {}
+    }
+  }
+}
