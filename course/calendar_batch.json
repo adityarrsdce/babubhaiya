@@ -1,0 +1,7 @@
+{
+  "events": {
+    "BTech": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/btech/pyq/btech_cal.json",
+    "Diploma": "https://raw.githubusercontent.com/adityarrsdce/pyq-pdfs/main/Diploma/event_data.json",
+    "Nursing": "https://raw.githubusercontent.com/adityarrsdce/pyq-pdfs/main/Nursing/event_data.json"
+  }
+}
