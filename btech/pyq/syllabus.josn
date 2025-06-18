@@ -1,51 +1,12 @@
 {
-  "LMN Engineering College": {
-    "rank": 1,
-    "image": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/imag/ChatGPT%20Image%20Jun%2018,%202025,%2003_30_35%20PM.png"
-  },
-  
-  "LMN ngineering College": {
-    "rank": 11,
-    "image": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/imag/ChatGPT%20Image%20Jun%2018,%202025,%2003_30_35%20PM.png"
-  },
-  
-  "LMN Enginering College": {
-    "rank": 2,
-    "image": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/imag/ChatGPT%20Image%20Jun%2018,%202025,%2003_30_35%20PM.png"
-  },
-  
-  "LMN Engineering Colege": {
-    "rank": 3,
-    "image": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/imag/ChatGPT%20Image%20Jun%2018,%202025,%2003_30_35%20PM.png"
-  },
-  
-  "LMN Engineesfaring College": {
-    "rank": 4,
-    "image": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/imag/ChatGPT%20Image%20Jun%2018,%202025,%2003_30_35%20PM.png"
-  },
-  
-  "LMN Engiadfneering College": {
-    "rank": 5,
-    "image": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/imag/ChatGPT%20Image%20Jun%2018,%202025,%2003_30_35%20PM.png"
-  },
-  
-  "LMN Engineerering College": {
-    "rank": 6,
-    "image": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/imag/ChatGPT%20Image%20Jun%2018,%202025,%2003_30_35%20PM.png"
-  },
-  
-  "LMN Engineeriqng College": {
-    "rank": 7,
-    "image": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/imag/ChatGPT%20Image%20Jun%2018,%202025,%2003_30_35%20PM.png"
-  },
-  
-  "LMN Engineecaring College": {
-    "rank": 8,
-    "image": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/imag/ChatGPT%20Image%20Jun%2018,%202025,%2003_30_35%20PM.png"
-  },
-
-  "XYZ College of Technoafeelogy": {
-    "rank": 9,
-    "image": "https://yourcdn.com/images/xyz.png"
+  "branches": {
+    "CSE": {
+      "DSA": "https://yourdomain.com/syllabus/BTech/CSE/DSA.pdf",
+      "OOPs": "https://yourdomain.com/syllabus/BTech/CSE/OOPs.pdf"
+    },
+    "ECE": {
+      "Analog Circuits": "https://yourdomain.com/syllabus/BTech/ECE/Analog.pdf",
+      "Digital Logic": "https://yourdomain.com/syllabus/BTech/ECE/Digital.pdf"
+    }
   }
 }
