@@ -1,0 +1,7 @@
+{
+  "courses": {
+    "BTech": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/btech/pyq/sly_btech.json",
+    "Diploma": "https://yourdomain.com/data/diploma_syllabus.json",
+    "Nursing": "https://yourdomain.com/data/nursing_syllabus.json"
+  }
+}
