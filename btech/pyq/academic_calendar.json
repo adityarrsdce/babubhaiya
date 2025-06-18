@@ -1,11 +1,6 @@
 {
-  "branches": {
-    "CSE": {
-      "1st Semester": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/3rd/dsa/DSA-2020.pdf",
-      "2nd Semester": "https://example.com/event2.pdf"
-    },
-    "ECE": {
-      "1st Semester": "https://example.com/event3.pdf"
-    }
+  "events": {
+    "BTech": "https://example.com/btech_events.json",
+    "Diploma": "https://example.com/diploma_events.json"
   }
 }
