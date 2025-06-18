@@ -1,6 +1,0 @@
-{
-  "events": {
-    "BTech": "https://example.com/btech_events.json",
-    "Diploma": "https://example.com/diploma_events.json"
-  }
-}
