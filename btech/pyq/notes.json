@@ -1,0 +1,13 @@
+{
+  "topics": {
+    "CSE": {
+      "3rd Semester": {
+        "DSA": "https://raw.githubusercontent.com/adityarrsdce/pyq-pdfs/main/Btech/notes/CSE/3rd/dsa.pdf",
+        "OOPs": "https://raw.githubusercontent.com/adityarrsdce/pyq-pdfs/main/Btech/notes/CSE/3rd/oops.pdf"
+      },
+      "4th Semester": {
+        "DBMS": "https://raw.githubusercontent.com/adityarrsdce/pyq-pdfs/main/Btech/notes/CSE/4th/dbms.pdf"
+      }
+    }
+  }
+}
