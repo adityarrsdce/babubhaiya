@@ -1,5 +1,5 @@
 {
-  "BTech": "https://yourdomain.com/ranking/btech.json",
+  "BTech": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/btech/pyq/rank_btech.json",
   "Nursing": "https://yourdomain.com/ranking/nursing.json",
   "Diploma": "https://yourdomain.com/ranking/diploma.json",
   "ITI": "https://yourdomain.com/ranking/iti.json"
