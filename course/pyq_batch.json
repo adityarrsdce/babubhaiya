@@ -1,0 +1,7 @@
+{
+  "courses": {
+    "BTech": "https://raw.githubusercontent.com/adityarrsdce/pyq-pdfs/refs/heads/main/data.json",
+    "Diploma": "https://example.com/json/diploma.json",
+    "Nursing": "https://example.com/json/nursing.json"
+  }
+}
