@@ -1,0 +1,6 @@
+{
+  "courses": {
+    "B.Tech": "https://example.com/faculty/btech.json",
+    "Diploma": "https://example.com/faculty/diploma.json"
+  }
+}
