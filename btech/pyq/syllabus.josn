@@ -1,10 +1,54 @@
 {
   "branches": {
     "CSE": {
-      "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/1st/Syllabus/cse_1.pdf"
+      "1st": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/1st/Syllabus/cse_1.pdf" },
+      "2nd": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/2nd/Syllabus%20/cse_2.pdf" },
+      "3rd": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/3rd/Syllabus/cse_3.pdf" },
+      "4th": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/4th/Syllabus/cse_4.pdf" },
+      "5th": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/5th/Syllabus/cse_5.pdf" },
+      "6th": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/6th/Syllabus/cse_5.pdf" },
+      "7th": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/7th/Syllabus/cse_7.pdf" },
+      "8th": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/8th/Syllabus/cse_8.pdf" }
+    },
+    "MECHANICAL": {
+      "1st": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/MECHANICAL/1st/Syllabus/mechanical_1.pdf" },
+      "2nd": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/MECHANICAL/2nd/Syllabus/mechanical_2.pdf" },
+      "3rd": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/MECHANICAL/3rd/Syllabus/mechanical_3.pdf" },
+      "4th": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/MECHANICAL/4th/Syllabus/mechanical_4.pdf" },
+      "5th": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/MECHANICAL/5th/Syllabus/mechanical_5.pdf" },
+      "6th": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/MECHANICAL/6th/Syllabus/mechanical_6.pdf" },
+      "7th": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/MECHANICAL/7th/Syllabus/mechanical_7.pdf" },
+      "8th": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/MECHANICAL/8th/Syllabus/mechanical_8.pdf" }
     },
     "EEE": {
-      "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/EEE/1st/Syllabus/EEE_1.pdf"
+      "1st": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/EEE/1st/Syllabus/EEE_1.pdf" },
+      "2nd": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/EEE/2nd/Syllabus/EEE_2.pdf" },
+      "3rd": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/EEE/3rd/Syllabus/EEE_3.pdf" },
+      "4th": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/EEE/4th/Syllabus/EEE_4.pdf" },
+      "5th": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/EEE/5th/Syllabus/EEE_5.pdf" },
+      "6th": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/EEE/6th/Syllabus/EEE_6.pdf" },
+      "7th": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/EEE/7th/Syllabus/EEE_7.pdf" },
+      "8th": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/EEE/8th/Syllabus/EEE_8.pdf" }
+    },
+    "CIVIL": {
+      "1st": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CIVIL/1st/Syllabus/civil_1.pdf" },
+      "2nd": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CIVIL/2nd/Syllabus/civil_2nd.pdff" },
+      "3rd": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CIVIL/3rd/Syllabus/civil_3.pdf" },
+      "4th": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CIVIL/4th/Syllabus/civil_4.pdf" },
+      "5th": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CIVIL/5th/Syllabus%20/civil_5.pdf" },
+      "6th": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CIVIL/6th/Syllabus/civil_6.pdf" },
+      "7th": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CIVIL/7th/Syllabus/civil_7.pdf" },
+      "8th": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CIVIL/8th/Syllabus/civil_8.pdf" }
+    },
+    "CHEMICAL": {
+      "1st": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CHEMICAL/1st/Syllabus/chemical_1.pdf" },
+      "2nd": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CHEMICAL/2nd/Syllabus/chemical_2.pdf" },
+      "3rd": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CHEMICAL/3rd/Syllabus/chemical_3.pdf" },
+      "4th": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CHEMICAL/4th/Syllabus/chemical_4.pdf" },
+      "5th": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CHEMICAL/5th/Syllabus/chemical_5.pdf" },
+      "6th": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CHEMICAL/6th/Syllabus/chemical_6.pdf" },
+      "7th": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CHEMICAL/7th/Syllabus/chemical_7.pdf" },
+      "8th": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CHEMICAL/8th/Syllabus/chemical_8.pdf" }
     }
   }
 }
