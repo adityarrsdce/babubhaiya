@@ -1,12 +1,10 @@
 {
   "branches": {
     "CSE": {
-      "DSA": "https://yourdomain.com/syllabus/BTech/CSE/DSA.pdf",
-      "OOPs": "https://yourdomain.com/syllabus/BTech/CSE/OOPs.pdf"
+      "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/1st/Syllabus/cse_1.pdf"
     },
-    "ECE": {
-      "Analog Circuits": "https://yourdomain.com/syllabus/BTech/ECE/Analog.pdf",
-      "Digital Logic": "https://yourdomain.com/syllabus/BTech/ECE/Digital.pdf"
+    "EEE": {
+      "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/EEE/1st/Syllabus/EEE_1.pdf"
     }
   }
 }
