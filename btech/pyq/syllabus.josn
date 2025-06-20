@@ -30,6 +30,26 @@
       "7th": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/EEE/7th/Syllabus/EEE_7.pdf" },
       "8th": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/EEE/8th/Syllabus/EEE_8.pdf" }
     },
+"EE": {
+      "1st": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/EEE/1st/Syllabus/EEE_1.pdf" },
+      "2nd": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/EEE/2nd/Syllabus/EEE_2.pdf" },
+      "3rd": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/EEE/3rd/Syllabus/EEE_3.pdf" },
+      "4th": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/EEE/4th/Syllabus/EEE_4.pdf" },
+      "5th": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/EEE/5th/Syllabus/EEE_5.pdf" },
+      "6th": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/EEE/6th/Syllabus/EEE_6.pdf" },
+      "7th": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/EEE/7th/Syllabus/EEE_7.pdf" },
+      "8th": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/EEE/8th/Syllabus/EEE_8.pdf" }
+    },
+"EC": {
+      "1st": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/EEE/1st/Syllabus/EEE_1.pdf" },
+      "2nd": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/EEE/2nd/Syllabus/EEE_2.pdf" },
+      "3rd": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/EEE/3rd/Syllabus/EEE_3.pdf" },
+      "4th": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/EEE/4th/Syllabus/EEE_4.pdf" },
+      "5th": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/EEE/5th/Syllabus/EEE_5.pdf" },
+      "6th": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/EEE/6th/Syllabus/EEE_6.pdf" },
+      "7th": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/EEE/7th/Syllabus/EEE_7.pdf" },
+      "8th": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/EEE/8th/Syllabus/EEE_8.pdf" }
+    },
     "CIVIL": {
       "1st": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CIVIL/1st/Syllabus/civil_1.pdf" },
       "2nd": { "All": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CIVIL/2nd/Syllabus/civil_2nd.pdff" },
