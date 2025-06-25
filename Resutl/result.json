@@ -1,10 +1,15 @@
 {
   "BTech": {
-    "1": "https://results.example.com/btech_sem1",
-    "2": "https://results.beup.ac.in/ResultsBTech2ndSem2024_B2023Pub.aspx"
+    "semesters": {
+      "1": "https://results.beup.ac.in/BTechSem1",
+      "2": "https://results.beup.ac.in/ResultsBTech2ndSem2024_B2023Pub.aspx",
+      "3": "https://results.beup.ac.in/BTechSem3"
+    }
   },
   "Diploma": {
-    "1": "https://results.example.com/diploma_sem1",
-    "2": "https://results.example.com/diploma_sem2"
+    "semesters": {
+      "1": "https://results.beup.ac.in/DiplomaSem1",
+      "2": "https://results.beup.ac.in/DiplomaSem2"
+    }
   }
 }
