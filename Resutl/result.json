@@ -1,0 +1,10 @@
+{
+  "BTech": {
+    "1": "https://results.example.com/btech_sem1",
+    "2": "https://results.beup.ac.in/BTech2ndSem2024_B2023Results.aspx"
+  },
+  "Diploma": {
+    "1": "https://results.example.com/diploma_sem1",
+    "2": "https://results.example.com/diploma_sem2"
+  }
+}
