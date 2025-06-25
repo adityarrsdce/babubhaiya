@@ -1,0 +1,6 @@
+{
+  "courses": {
+    "BTech": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/main/course/btech_test.json",
+    "Diploma": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/main/course/diploma_test.json"
+  }
+}
