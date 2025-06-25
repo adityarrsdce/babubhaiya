@@ -1,0 +1,47 @@
+{
+  "BRANCHES": {
+    "CSE": {
+      "Semester 1": {
+        "Maths": {
+          "Q1": {
+            "question": "What is 2 + 2?",
+            "options": ["3", "4", "5", "6"],
+            "answer": "4"
+          },
+          "Q2": {
+            "question": "What is the square root of 16?",
+            "options": ["2", "4", "8", "16"],
+            "answer": "4"
+          }
+        },
+        "Physics": {
+          "Q1": {
+            "question": "What is the unit of force?",
+            "options": ["Joule", "Watt", "Newton", "Pascal"],
+            "answer": "Newton"
+          }
+        }
+      },
+      "Semester 2": {
+        "Chemistry": {
+          "Q1": {
+            "question": "What is H2O?",
+            "options": ["Oxygen", "Hydrogen", "Water", "Salt"],
+            "answer": "Water"
+          }
+        }
+      }
+    },
+    "ECE": {
+      "Semester 1": {
+        "Electronics": {
+          "Q1": {
+            "question": "What is a diode used for?",
+            "options": ["Amplification", "Rectification", "Oscillation", "Regulation"],
+            "answer": "Rectification"
+          }
+        }
+      }
+    }
+  }
+}
