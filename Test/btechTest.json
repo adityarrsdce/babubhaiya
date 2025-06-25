@@ -3,43 +3,82 @@
     "CSE": {
       "Semester 1": {
         "Maths": {
-          "Q1": {
-            "question": "What is 2 + 2?",
-            "options": ["3", "4", "5", "6"],
-            "answer": "4"
-          },
-          "Q2": {
-            "question": "What is the square root of 16?",
-            "options": ["2", "4", "8", "16"],
-            "answer": "4"
-          }
+          "Q1":  { "question": "What is 2 + 2?",        "options": ["3","4","5","6"],          "answer": "4" },
+          "Q2":  { "question": "√16 = ?",              "options": ["2","4","8","16"],         "answer": "4" },
+          "Q3":  { "question": "5 * 6 = ?",            "options": ["30","20","25","35"],      "answer": "30" },
+          "Q4":  { "question": "10 / 2 = ?",           "options": ["2","4","5","8"],          "answer": "5" },
+          "Q5":  { "question": "What is 7 - 3?",       "options": ["3","4","5","6"],          "answer": "4" },
+          "Q6":  { "question": "2^3 = ?",              "options": ["6","8","9","4"],          "answer": "8" },
+          "Q7":  { "question": "9 + 10 = ?",           "options": ["19","17","20","18"],      "answer": "19" },
+          "Q8":  { "question": "12 ÷ 4 = ?",           "options": ["2","3","4","6"],          "answer": "3" },
+          "Q9":  { "question": "6^2 = ?",              "options": ["36","16","42","12"],      "answer": "36" },
+          "Q10": { "question": "15 - 7 = ?",           "options": ["7","8","9","6"],          "answer": "8" }
         },
         "Physics": {
-          "Q1": {
-            "question": "What is the unit of force?",
-            "options": ["Joule", "Watt", "Newton", "Pascal"],
-            "answer": "Newton"
-          }
+          "Q1":  { "question": "Unit of force?",            "options": ["Joule","Watt","Newton","Pascal"],  "answer": "Newton" },
+          "Q2":  { "question": "Speed of light?",          "options": ["3×10^8 m/s","3×10^6","5×10^8","1×10^6"], "answer": "3×10^8 m/s" },
+          "Q3":  { "question": "Not a fundamental force?", "options": ["Gravitational","Friction","EM","Nuclear"], "answer": "Friction" },
+          "Q4":  { "question": "Unit of energy?",           "options": ["Newton","Watt","Joule","Pascal"],     "answer": "Joule" },
+          "Q5":  { "question": "Mass × acceleration = ?",   "options": ["Work","Power","Force","Energy"],     "answer": "Force" },
+          "Q6":  { "question": "Unit of pressure?",         "options": ["Pascal","Newton","Joule","Watt"],    "answer": "Pascal" },
+          "Q7":  { "question": "Acceleration due to gravity?", "options": ["9.8 m/s²","10 m/s²","8.9","9.5"],   "answer": "9.8 m/s²" },
+          "Q8":  { "question": "Work = Force × ?",         "options": ["Velocity","Distance","Time","Power"],   "answer": "Distance" },
+          "Q9":  { "question": "Unit of frequency?",        "options": ["Hertz","Newton","Pascal","Watt"],       "answer": "Hertz" },
+          "Q10": { "question": "Symbol for acceleration?",  "options": ["v","a","s","t"],                   "answer": "a" }
         }
       },
       "Semester 2": {
         "Chemistry": {
-          "Q1": {
-            "question": "What is H2O?",
-            "options": ["Oxygen", "Hydrogen", "Water", "Salt"],
-            "answer": "Water"
-          }
+          "Q1":  { "question": "What is H2O?",                "options": ["Oxygen","Hydrogen","Water","Salt"],     "answer": "Water" },
+          "Q2":  { "question": "Atomic no. of Oxygen?",       "options": ["6","7","8","9"],                      "answer": "8" },
+          "Q3":  { "question": "NaCl is?",                    "options": ["Sugar","Salt","Acid","Water"],        "answer": "Salt" },
+          "Q4":  { "question": "pH<7 means?",                 "options": ["Acidic","Basic","Neutral","Salt"],     "answer": "Acidic" },
+          "Q5":  { "question": "Formula of Ammonia?",         "options": ["NH3","CH4","H2O","CO2"],               "answer": "NH3" },
+          "Q6":  { "question": "Atomic no. of H?",            "options": ["1","2","3","4"],                      "answer": "1" },
+          "Q7":  { "question": "Isotopes differ in?",         "options": ["Protons","Neutrons","Electrons","Charge"], "answer": "Neutrons" },
+          "Q8":  { "question": "Common name of CH4?",         "options": ["Methane","Ethane","Propane","Butane"], "answer": "Methane" },
+          "Q9":  { "question": "Gas at STP is?",              "options": ["Liquid","Solid","Gas","Plasma"],      "answer": "Gas" },
+          "Q10": { "question": "Valency of water Oxygen?",   "options": ["1","2","3","4"],                      "answer": "2" }
+        },
+        "Programming": {
+          "Q1":  { "question": "Mother of languages?",         "options": ["C","Java","Python","COBOL"],          "answer": "C" },
+          "Q2":  { "question": "C statement ends with?",      "options": [".","; ",",",":"],                    "answer": ";" },
+          "Q3":  { "question": "Python extension?",           "options": [".pt",".pyt",".py",".python"],         "answer": ".py" },
+          "Q4":  { "question": "Loop: repeat until false?",   "options": ["if","while","for","switch"],          "answer": "while" },
+          "Q5":  { "question": "Print in Python?",            "options": ["echo","printf","print","cout"],       "answer": "print" },
+          "Q6":  { "question": "Java is?",                    "options": ["Compiled","Interpreted","Both","None"], "answer": "Both" },
+          "Q7":  { "question": "Keyword for function in Python?", "options": ["func","def","function","fun"],      "answer": "def" },
+          "Q8":  { "question": "C loop with counter?",        "options": ["if","for","while","switch"],          "answer": "for" },
+          "Q9":  { "question": "Comment starts with in C?",   "options": ["#","//","<!--","--"],                 "answer": "//" },
+          "Q10": { "question": "Language used for web?",      "options": ["C#","HTML","SQL","Java"],             "answer": "HTML" }
         }
       }
     },
     "ECE": {
       "Semester 1": {
         "Electronics": {
-          "Q1": {
-            "question": "What is a diode used for?",
-            "options": ["Amplification", "Rectification", "Oscillation", "Regulation"],
-            "answer": "Rectification"
-          }
+          "Q1":  { "question": "Diode used for?",                 "options": ["Amplification","Rectification","Oscillation","Regulation"],  "answer": "Rectification" },
+          "Q2":  { "question": "Passive component?",              "options": ["Transistor","Diode","Capacitor","IC"],                      "answer": "Capacitor" },
+          "Q3":  { "question": "LED stands for?",                 "options": ["Light Emitting Diode","Low Energy Diode","Laser Emitting Diode","None"], "answer": "Light Emitting Diode" },
+          "Q4":  { "question": "Transistor is?",                 "options": ["Passive","Active","Both","None"],                          "answer": "Active" },
+          "Q5":  { "question": "Unit of capacitance?",            "options": ["Farad","Henry","Ohm","Tesla"],                             "answer": "Farad" },
+          "Q6":  { "question": "Resistor unit?",                  "options": ["Ohm","Volt","Ampere","Watt"],                              "answer": "Ohm" },
+          "Q7":  { "question": "IC stands for?",                  "options": ["Integrated Circuit","Internal Capacitance","Instant Control","None"],  "answer": "Integrated Circuit" },
+          "Q8":  { "question": "Function of capacitor?",          "options": ["Store charge","Amplify","Oscillate","Rectify"],            "answer": "Store charge" },
+          "Q9":  { "question": "SCR is a type of?",                "options": ["Resistor","Capacitor","Transistor","Diode"],               "answer": "Diode" },
+          "Q10": { "question": "Logic gate AND outputs?",        "options": ["1 if both inputs 1","0 always","1 always","None"],         "answer": "1 if both inputs 1" }
+        },
+        "Maths": {
+          "Q1":  { "question": "Derivative of x^2?",              "options": ["x","2x","x^2","2"],                      "answer": "2x" },
+          "Q2":  { "question": "∫(1/x) dx = ?",                    "options": ["x","log(x)","x^2","1/x"],              "answer": "log(x)" },
+          "Q3":  { "question": "d/dx of sin x = ?",               "options": ["cos x","-sin x","sin x","-cos x"],      "answer": "cos x" },
+          "Q4":  { "question": "Integral of cos x?",              "options": ["sin x","-sin x","cos x","-cos x"],      "answer": "sin x" },
+          "Q5":  { "question": "Derivative of e^x?",              "options": ["e^x","x e^(x-1)","e","ln(x)"],           "answer": "e^x" },
+          "Q6":  { "question": "∫ x dx = ?",                       "options": ["x^2/2","x^2","1/x","log x"],           "answer": "x^2/2" },
+          "Q7":  { "question": "Limit of (1+1/n)^n as n→∞?",       "options": ["e","π","1","0"],                       "answer": "e" },
+          "Q8":  { "question": "∑ i from 1 to n = ?",             "options": ["n(n+1)/2","n^2","n!","n"],              "answer": "n(n+1)/2" },
+          "Q9":  { "question": "d/dx of ln x = ?",                "options": ["1/x","x","ln x","e^x"],                "answer": "1/x" },
+          "Q10": { "question": "∫ e^x dx = ?",                     "options": ["e^x","e^(x-1)","x e^x","ln x"],          "answer": "e^x" }
         }
       }
     }
