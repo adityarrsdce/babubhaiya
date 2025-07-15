@@ -10,5 +10,15 @@
       "7": "https://results.beup.ac.in/ResultsBTech7thSem2024_B2021Pub.aspx",
       "8": "https://results.beup.ac.in/ResultsBTech8thSem2024_B2021Pub.aspx"
     }
+  },
+  "ParaMedical": {
+    "semesters": {
+      "1": "https://results.beup.ac.in/ResultsParaMedical1stSem2024.aspx",
+      "2": "https://results.beup.ac.in/ResultsParaMedical2ndSem2024.aspx",
+      "3": "https://results.beup.ac.in/ResultsParaMedical3rdSem2024.aspx",
+      "4": "https://results.beup.ac.in/ResultsParaMedical4thSem2024.aspx",
+      "5": "https://results.beup.ac.in/ResultsParaMedical5thSem2024.aspx",
+      "6": "https://results.beup.ac.in/ResultsParaMedical6thSem2024.aspx"
+    }
   }
 }
