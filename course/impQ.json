@@ -1,0 +1,7 @@
+{
+  "courses": {
+    "BTech": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/main/imp/btech.json",
+    "Diploma": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/main/imp/diploma.json",
+    "Nursing": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/main/imp/nursing.json"
+  }
+}
