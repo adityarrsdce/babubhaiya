@@ -1,0 +1,27 @@
+{
+  "BRANCHES": {
+    "CSE": {
+      "Sem 1": {
+        "Maths": {
+          "2023": "https://example.com/impq/cse/sem1/maths_2023.pdf",
+          "2022": "https://example.com/impq/cse/sem1/maths_2022.pdf"
+        },
+        "Physics": {
+          "2023": "https://example.com/impq/cse/sem1/physics_2023.pdf"
+        }
+      },
+      "Sem 2": {
+        "C Programming": {
+          "2023": "https://example.com/impq/cse/sem2/cprog_2023.pdf"
+        }
+      }
+    },
+    "ECE": {
+      "Sem 1": {
+        "Basic Electronics": {
+          "2023": "https://example.com/impq/ece/sem1/electronics_2023.pdf"
+        }
+      }
+    }
+  }
+}
