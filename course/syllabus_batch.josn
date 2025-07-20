@@ -1,5 +1,5 @@
 {
   "courses": {
-    "B.Tech": "https://yourdomain.com/json/btech.json"
+    "B.Tech": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/syllabus/btech/list.json"
   }
 }
