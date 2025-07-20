@@ -1,0 +1,7 @@
+{
+  "branches": {
+    "CSE": "https://yourdomain.com/json/cse_syllabus.json",
+    "ECE": "https://yourdomain.com/json/ece_syllabus.json",
+    "ME": "https://yourdomain.com/json/me_syllabus.json"
+  }
+}
