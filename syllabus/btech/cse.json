@@ -1,0 +1,11 @@
+{
+  "Semester 1": {
+   "Maths 1": "This is the complete syllabus of Maths 1 for semester 1. Topics include calculus, limits..."
+,
+    "Physics": "https://example.com/cse/sem1/physics.pdf"
+  },
+  "Semester 2": {
+    "Programming": "https://example.com/cse/sem2/programming.pdf",
+    "Maths 2": "https://example.com/cse/sem2/maths2.pdf"
+  }
+}
