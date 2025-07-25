@@ -1,0 +1,14 @@
+[
+  {
+    "year": "2024",
+    "fileUrl": "https://example.com/pdfs/ssc_2024.pdf",
+    "thumbnail": "https://example.com/thumbs/ssc.png",
+    "uploadedAt": "2024-07-01"
+  },
+  {
+    "year": "2023",
+    "fileUrl": "https://example.com/pdfs/ssc_2023.pdf",
+    "thumbnail": "https://example.com/thumbs/ssc.png",
+    "uploadedAt": "2023-07-01"
+  }
+]
