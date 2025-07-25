@@ -1,6 +1,6 @@
 {
   "branches": {
-    "CSE": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/syllabus/btech/cse.json",
+    "CSE": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/syllabus/btech/list.json",
     "ECE": "https://yourdomain.com/json/ece_syllabus.json",
     "ME": "https://yourdomain.com/json/me_syllabus.json"
   }
