@@ -4,6 +4,6 @@
     "GATE ECE": "https://example.com/data/gate.json",
     "UPSC": "https://example.com/data/upsc.json",
     "JEE": "https://example.com/data/jee.json",
-    "UGC NET":"https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/CompetitiveExam/ugc_net.json"
+    "UGC NET":"https://github.com/adityarrsdce/babubhaiya/blob/main/CompetitiveExam/ugc_net.json"
   }
 }
