@@ -1,14 +1,12 @@
 [
   {
-    "year": "2024",
-    "fileUrl": "https://example.com/pdfs/ssc_2024.pdf",
-    "thumbnail": "https://example.com/thumbs/ssc.png",
-    "uploadedAt": "2024-07-01"
+    "title": "SSC CGL 2023",
+    "fileUrl": "https://example.com/ssc_cgl_2023.pdf",
+    "uploadedAt": "2024-06-01"
   },
   {
-    "year": "2023",
-    "fileUrl": "https://example.com/pdfs/ssc_2023.pdf",
-    "thumbnail": "https://example.com/thumbs/ssc.png",
-    "uploadedAt": "2023-07-01"
+    "title": "GATE ECE 2022",
+    "fileUrl": "https://example.com/gate_ece_2022.pdf",
+    "uploadedAt": "2024-05-20"
   }
 ]
