@@ -1,12 +1,32 @@
 [
   {
-    "title": "SSC CGL 2023",
-    "fileUrl": "https://example.com/ssc_cgl_2023.pdf",
-    "uploadedAt": "2024-06-01"
+    "title": "UGC NET June 2024 Paper 1",
+    "fileUrl": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CompetitiveExam/ugc_NET/UGC-NET-Forensic-Science-20-Nov-2021-Shift-2.pdf",
+    "uploadedAt": "2024-06-18"
   },
   {
-    "title": "GATE ECE 2022",
-    "fileUrl": "https://example.com/gate_ece_2022.pdf",
-    "uploadedAt": "2024-05-20"
+    "title": "UGC NET Dec 2023 Paper 1",
+    "fileUrl": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CompetitiveExam/ugc_NET/UGC-NET-Forensic-Science-2021-Shift-2.pdf",
+    "uploadedAt": "2023-12-12"
+  },
+  {
+    "title": "UGC NET June 2023 Paper 1",
+    "fileUrl": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CompetitiveExam/ugc_NET/UGC-NET-Forensic-Science-2022-Shift-1.pdf",
+    "uploadedAt": "2023-06-21"
+  },
+  {
+    "title": "UGC NET June 2023 Paper 1",
+    "fileUrl": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CompetitiveExam/ugc_NET/UGC-NET-Forensic-Science-2022.pdf",
+    "uploadedAt": "2023-07-22"
+  },
+  {
+    "title": "UGC NET June 2023 Paper 1",
+    "fileUrl": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CompetitiveExam/ugc_NET/UGC-NET-Forensic-Science-28-Nov-2021-Shift-2.pdf",
+    "uploadedAt": "2023-08-21"
+  },
+  {
+    "title": "UGC NET June 2023 Paper 1",
+    "fileUrl": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CompetitiveExam/ugc_NET/UGC-NET-Forensic-Science-December-2023%20(1).pdf",
+    "uploadedAt": "2023-09-21"
   }
 ]
