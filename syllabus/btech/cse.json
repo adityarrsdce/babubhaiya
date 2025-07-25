@@ -1,10 +1,19 @@
 {
-  "Semester 1": {
-    "Maths 1": "https://example.com/cse/sem1/maths1.pdf",
-    "Physics": "https://example.com/cse/sem1/physics.pdf"
-  },
-  "Semester 2": {
-    "Programming": "https://example.com/cse/sem2/programming.pdf",
-    "Maths 2": "https://example.com/cse/sem2/maths2.pdf"
+  "branches": {
+    "CSE": {
+      "Semester 1": {
+        "Physics": "https://example.com/syllabus/cse_sem1_physics.pdf",
+        "Mathematics": "https://example.com/syllabus/cse_sem1_math.pdf"
+      },
+      "Semester 2": {
+        "Programming": "https://example.com/syllabus/cse_sem2_programming.pdf",
+        "Engineering Mechanics": "https://example.com/syllabus/cse_sem2_mechanics.pdf"
+      }
+    },
+    "ECE": {
+      "Semester 1": {
+        "Basic Electronics": "https://example.com/syllabus/ece_sem1_electronics.pdf"
+      }
+    }
   }
 }
