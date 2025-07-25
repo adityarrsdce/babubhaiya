@@ -8,6 +8,10 @@
       "Semester 2": {
         "Programming": "https://example.com/syllabus/cse_sem2_programming.pdf",
         "Engineering Mechanics": "https://example.com/syllabus/cse_sem2_mechanics.pdf"
+      },
+       "Semester 2": {
+        "Programming": "https://example.com/syllabus/cse_sem2_programming.pdf",
+        "Engineering Mechanics": "https://example.com/syllabus/cse_sem2_mechanics.pdf"
       }
     },
     "ECE": {
