@@ -9,33 +9,34 @@
       "2ND SEMESTER": {},
       "3RD SEMESTER": {
         "TECHNICAL WRITING": {
-          "2019": "https://drive.google.com/file/d/1eyKqsGTAP8EEESAIF4NBBGZSgCB6Unej/view?usp=drive_link",
-          "2022": "https://drive.google.com/file/d/1ezbcPAzv3WuwI54jcWDBfBkGS8hK7F31/view?usp=drive_link",
-          "2023": "https://drive.google.com/file/d/1euwWmihTPCMjLrVRzQ0r82yaXgoF3mmM/view?usp=drive_link"
+          "2019": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/3rd/tw/Tw-2019.pdf",
+          "2022": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/3rd/tw/Tw-2021.pdf",
+          "2023": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/3rd/tw/Tw-2022.pdf"
         },
         "DSA": {
-          "2019": "https://drive.google.com/file/d/1WDi-lS7wzThVVFk497Xzb5_fWwcdGzv2/view?usp=drive_link",
-          "2020": "https://drive.google.com/file/d/1CE5X0rexqcZw-SVQGNKRtXNVY6AdOSuB/view?usp=drive_link",
-          "2021": "https://drive.google.com/file/d/1DdunP0csVaTypMjMxddVjkK_HW4l6Iwz/view?usp=drive_link",
-          "2022": "https://drive.google.com/file/d/15K9_3JIQhlV-SJRxpku4qCpurg6H9jC_/view?usp=drive_link",
-          "2023": "https://drive.google.com/file/d/1f1ALX6Sy26MaU4nWVZ-yFkj8D6l-ZRsk/view?usp=drive_link"
+          "2019": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/3rd/dsa/DSA-2019.pdf",
+          "2020": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/3rd/dsa/DSA-2020.pdf",
+          "2021": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/3rd/dsa/dsa-2021.pdf",
+          "2022": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/3rd/dsa/DSA-2022.pdf",
+          "2023": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/3rd/dsa/DSA-2023.pdf"
         },
         "MATHS": {
-          "2020": "https://drive.google.com/file/d/1ekg33vt_BLWgJRt-EhH-0xujZ2esAS6y/view?usp=drive_link",
-          "2021": "https://drive.google.com/file/d/1DdunP0csVaTypMjMxddVjkK_HW4l6Iwz/view?usp=drive_link",
-          "2022": "https://drive.google.com/file/d/1ercSZPONrhGouWaJTJVmNU7sBCm189RX/view?usp=drive_link"
+          "2019":"https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/3rd/maths/MATHS-2019.pdf",
+          "2020": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/3rd/maths/MATHS-2020.pdf",
+          "2022": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/3rd/maths/MATHS-2022.pdf"
         },
         "OBJECT ORIENTED PROGRAMMING": {
-          "2019": "https://drive.google.com/file/d/1eLuq4er9F4ksRyEzF4CzmgkFghAZT288/view?usp=drive_link",
-          "2020": "https://drive.google.com/file/d/1eJCPIqbNsbftlH05ipP6Uab1N7QCv_5x/view?usp=drive_link",
-          "2022": "https://drive.google.com/file/d/1eR0rpPROZQ1_uX5KsWyqkgp2DTvpWSKl/view?usp=drive_link",
-          "2023": "https://drive.google.com/file/d/1f1ZGnfVqY-doHzMj8B6reqW2K25OVQl3/view?usp=drive_link"
+          "2019": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/3rd/oop-cpp/OOP-2019.pdf",
+          "2020": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/3rd/oop-cpp/OOP-2020.pdf",
+          "2022": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/3rd/oop-cpp/OOP-2022.pdf",
+          "2023": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/3rd/oop-cpp/OOP-2023.pdf"
         },
         "ANALOG ELECTRONIC CIRCUITS": {
-          "2019": "https://drive.google.com/file/d/1ejCdIBC8iznDEET9XcXrV1O5ox3pZNjf/view?usp=drive_link",
-          "2021": "https://drive.google.com/file/d/1ekPYcQyOzAaXwjsJDBOGSxA4PLxLmvTV/view?usp=drive_link",
-          "2022": "https://drive.google.com/file/d/1efKKrULdFcRbYBGJKuR9r0vOE8DaEC_6/view?usp=drive_link",
-          "2023": "https://drive.google.com/file/d/1eSn4_WmDZLPHXurAOgZkDzDY_pRnMZN5/view?usp=drive_link"
+          "2019": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/3rd/aec/AEC-2019.pdf",
+          "2020":"https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/3rd/aec/AEC-2020.pdf",
+          "2021": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/3rd/aec/ACE-2021.pdf",
+          "2022": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/3rd/aec/AEC-2022.pdf",
+          "2023": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/3rd/aec/Aec-2023.pdf"
         }
       },
       "4TH SEMESTER": {},
