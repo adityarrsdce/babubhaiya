@@ -1,7 +1,11 @@
 {
   "branches": {
-    "CSE": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/main/syllabus/btech/cse.json",
-    "ECE": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/main/syllabus/btech/ece.json",
-    "ME": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/main/syllabus/btech/me.json"
+    "CSE": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/syllabus/btech/cse.json",
+    "ECE": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/syllabus/btech/ECE.json",
+    "EEE": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/syllabus/btech/EEE.json",
+    "MECHANICAL": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/syllabus/btech/Mechanical.json",
+    "CIVIL": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/syllabus/btech/civile.json",
+    "IT": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/syllabus/btech/it.json"
+
   }
 }
