@@ -1,0 +1,83 @@
+{
+  "branches": {
+    "EEE": {
+      "Semester 1": {
+        "ENGINEERING PHYSICS": "",
+        "ENGINEERING MATHEMATICS-I": "",
+        "PROGRAMMING FOR PROBLEM SOLVING": "",
+        "WORKSHOP PRACTICES": "",
+        "BASIC ELECTRICAL ENGG.": "",
+        "Swachha Bharat Mission (SBM)": "",
+        "ENGINEERING PHYSICS LAB": "",
+        "PROGRAMMING FOR PROBLEM SOLVING LAB": "",
+        "WORKSHOP PRACTICES LAB": "",
+        "BASIC ELECTRICAL ENGG. LAB": ""
+      },
+      "Semester 2": {
+        "ENGINEERING CHEMISTRY": "",
+        "ENGINEERING MATHEMATICS-II": "",
+        "COMMUNICATIVE ENGLISH": "",
+        "ENGINEERING GRAPHICS AND DESIGN": "",
+        "BASIC ELECTRONICS": "",
+        "Sports/YogaNCC/NSS": "",
+        "ENGINEERING CHEMISTRY LAB": "",
+        "COMMUNICATIVE ENGLISH LAB": "",
+        "ENGINEERING GRAPHICS AND DESIGN LAB": "",
+        "BASIC ELECTRONICS LAB": ""
+      },
+      "Semester 3": {
+        "ELECTRIC CIRCUIT ANALYSIS": "",
+        "DIGITAL ELECTRONICS": "",
+        "ELECTRICAL MACHINES - I": "",
+        "ELECTRICAL MACHINES LABORATORY -I": "",
+        "ELECTROMAGNETIC FIELDS": "",
+        "ENGINEERING MECHANICS": ""
+      },
+      "Semester 4": {
+        "ANALOG ELECTRONIC CIRCUIT": "",
+        "ELECTRICAL MACHINES II": "",
+        "MICROPROCESSORS": "",
+        "SIGNALS AND SYSTEMS": "",
+        "MATHEMATICS III (PROBABILITY AND STATICS)": "",
+        "BIOLOGY": ""
+      },
+      "Semester 5": {
+        "ANALOG AND DIGITAL COMMUNICATION SYSTEM": "",
+        "CAPSTONE DESIGN PROJECT": "",
+        "CONSTITUTION OF INDIA/ESSENCE OF INDIAN KNOWLEDGE TRADITIONAL": "",
+        "CONTROL SYSTEMS": "",
+        "MOOCS/SWAYAM / NPTEL COURSES -2": "",
+        "POWER ELECTRONICS": "",
+        "POWER SYSTEM I (APPARATUS AND MODELLING)": "",
+        "PROFESSIONAL ELECTIVE LABORATORY -1": "",
+        "SUMMER ENTREPRENEURSHIP -II": ""
+      },
+      "Semester 6": {
+        "DIGITAL SIGNAL PROCESSING": "",
+        "MEASUREMENTS AND INSTRUMENTATION": "",
+        "PROFESSIONAL SKILL DEVELOPMENT": "",
+        "INTRODUCTION TO VLSI DESIGN": "",
+        "PROGRAM ELECTIVE - I": "",
+        "PROGRAM ELECTIVE - II": "",
+        "ELECTRONICS DESIGN LABORATORY": "",
+        "GRADUATE EMPLOYABILITY SKILLS AND COMPETITIVE COURSES (GATE, IES, ETC.)": ""
+      },
+      "Semester 7": {
+        "OPEN ELECTIVE - I": "",
+        "OPEN ELECTIVE - II": "",
+        "PROGRAM ELECTIVE - III": "",
+        "PROGRAM ELECTIVE - IV": "",
+        "PROJECT -1": "",
+        "SEMINAR": "",
+        "SUMMER ENTREPRENEURSHIP -III": ""
+      },
+      "Semester 8": {
+        "OPEN ELECTIVE - I": "",
+        "OPEN ELECTIVE - IV": "",
+        "PROGRAM ELECTIVE - V": "",
+        "PROGRAM ELECTIVE - VI": "",
+        "PROJECT -II": ""
+      }
+    }
+  }
+}

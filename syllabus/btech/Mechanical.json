@@ -1,0 +1,81 @@
+{
+  "branches": {
+    "Mechanical": {
+      "1st Semester": {
+        "Engineering Chemistry": "mech/1/engineering_chemistry.pdf",
+        "Engineering Mathematics-I": "mech/1/engineering_math_1.pdf",
+        "Communicative English": "mech/1/communicative_english.pdf",
+        "Engineering Graphics and Design": "mech/1/eng_graphics_design.pdf",
+        "Basic Electrical Engineering": "mech/1/basic_electrical_engg.pdf",
+        "Sports/Yoga/NCC/NSS": "mech/1/sports_yoga_ncc_nss.pdf",
+        "Engineering Chemistry Lab": "mech/1/engg_chem_lab.pdf",
+        "Communicative English Lab": "mech/1/comm_eng_lab.pdf",
+        "Engineering Graphics and Design Lab": "mech/1/eng_graphics_design_lab.pdf",
+        "Basic Electrical Engineering Lab": "mech/1/basic_electrical_engg_lab.pdf"
+      },
+      "2nd Semester": {
+        "Engineering Physics": "mech/2/engineering_physics.pdf",
+        "Engineering Mathematics-II": "mech/2/engineering_math_2.pdf",
+        "Programming for Problem Solving": "mech/2/programming_for_problem_solving.pdf",
+        "Workshop Practices": "mech/2/workshop_practices.pdf",
+        "Elements of Mechanical Engg.": "mech/2/elements_of_mechanical_engg.pdf",
+        "Swachha Bharat Mission (SBM)": "mech/2/sbm.pdf",
+        "Engineering Physics Lab": "mech/2/engg_physics_lab.pdf",
+        "Programming for Problem Solving Lab": "mech/2/pps_lab.pdf",
+        "Workshop Practices Lab": "mech/2/workshop_lab.pdf",
+        "Elements of Mechanical Engg. Lab": "mech/2/elements_of_mech_lab.pdf"
+      },
+      "3rd Semester": {
+        "Machine Drawing": "mech/3/machine_drawing.pdf",
+        "Mathematics III (PDE, Probability and Statistics)": "mech/3/maths_3.pdf",
+        "Biology": "mech/3/biology.pdf",
+        "Basic Electronics Engineering": "mech/3/basic_electronics.pdf",
+        "Engineering Mechanics": "mech/3/engineering_mechanics.pdf",
+        "Thermodynamics": "mech/3/thermodynamics.pdf"
+      },
+      "4th Semester": {
+        "Fluid Mechanics": "mech/4/fluid_mechanics.pdf",
+        "Applied Thermodynamics": "mech/4/applied_thermodynamics.pdf",
+        "Strength of Materials": "mech/4/strength_of_materials.pdf",
+        "Engineering Materials": "mech/4/engineering_materials.pdf",
+        "Instrumentation and Control": "mech/4/instrumentation_control.pdf"
+      },
+      "5th Semester": {
+        "Heat Transfer": "mech/5/heat_transfer.pdf",
+        "Fluid Machinery": "mech/5/fluid_machinery.pdf",
+        "Manufacturing Processes": "mech/5/manufacturing_processes.pdf",
+        "Kinematics of Machine": "mech/5/kinematics_of_machine.pdf",
+        "Constitution of India / Essence of Indian Knowledge Tradition": "mech/5/constitution_india.pdf",
+        "Summer Entrepreneurship -II": "mech/5/summer_entrepreneurship_2.pdf",
+        "Open Elective - I": "mech/5/open_elective_1.pdf",
+        "Graduate Employability Skills and Competitive Courses (GATE, IES, ETC.)": "mech/5/employability_skills.pdf"
+      },
+      "6th Semester": {
+        "Dynamics of Machinery": "mech/6/dynamics_of_machinery.pdf",
+        "Manufacturing Technology": "mech/6/manufacturing_technology.pdf",
+        "Design of Machine Elements": "mech/6/design_machine_elements.pdf",
+        "Automation in Manufacturing": "mech/6/automation.pdf",
+        "Open Elective-I": "mech/6/open_elective_1.pdf",
+        "Program Elective-I": "mech/6/program_elective_1.pdf",
+        "Program Elective-II": "mech/6/program_elective_2.pdf",
+        "Graduate Employability Skills and Competitive Courses (GATE, IES, ETC.)": "mech/6/employability_skills.pdf"
+      },
+      "7th Semester": {
+        "Induction Program": "mech/7/induction_program.pdf",
+        "Internal Combustion Engines": "mech/7/ic_engines.pdf",
+        "Open Elective -II": "mech/7/open_elective_2.pdf",
+        "Program Elective -III": "mech/7/program_elective_3.pdf",
+        "Program Elective -IV": "mech/7/program_elective_4.pdf",
+        "Project -1": "mech/7/project_1.pdf",
+        "Summer Entrepreneurship -III": "mech/7/summer_entrepreneurship_3.pdf"
+      },
+      "8th Semester": {
+        "Open Elective -III": "mech/8/open_elective_3.pdf",
+        "Open Elective - IV": "mech/8/open_elective_4.pdf",
+        "Program Elective -V": "mech/8/program_elective_5.pdf",
+        "Program Elective -VI": "mech/8/program_elective_6.pdf",
+        "Project -II": "mech/8/project_2.pdf"
+      }
+    }
+  }
+}
