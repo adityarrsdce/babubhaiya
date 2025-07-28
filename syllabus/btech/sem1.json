@@ -1,0 +1,24 @@
+{
+  "branches": {
+    "CSE": {
+      "Semester 1": {
+        "Engineering Mathematics-I": {
+          "type": "text",
+          "text": "📘 PAPER CODE: MTH101\n📗 Subject: Engineering Mathematics-I\n🔢 Credit: 4 (L:3 T:1 P:0)\n\n🎯 Objectives:\n• Learn differential calculus\n• Understand applications in engineering problems\n\n📚 Module 1: Functions and Limits\n📚 Module 2: Differentiation and Continuity\n📚 Module 3: Mean Value Theorems\n📚 Module 4: Partial Derivatives\n📚 Module 5: Applications of Derivatives\n\n📘 Suggested Books:\n• B.S. Grewal – Higher Engineering Mathematics\n• Erwin Kreyszig – Advanced Engineering Mathematics"
+        },
+        "Engineering Physics": {
+          "type": "text",
+          "text": "📘 PAPER CODE: PHY102\n📗 Subject: Engineering Physics\n🔢 Credit: 4 (L:3 T:1 P:0)\n\n🎯 Objectives:\n• Understand principles of mechanics, optics and quantum theory\n• Apply physics knowledge to solve engineering problems\n\n📚 Module 1: Wave Optics\n📚 Module 2: Quantum Mechanics\n📚 Module 3: Crystallography\n📚 Module 4: Superconductivity\n📚 Module 5: Nanotechnology\n\n📘 Suggested Books:\n• H.K. Malik – Engineering Physics\n• M.N. Avadhanulu – Engineering Physics"
+        },
+        "Programming for Problem Solving": {
+          "type": "text",
+          "text": "📘 PAPER CODE: CST103\n📗 Subject: Programming for Problem Solving\n🔢 Credit: 4 (L:3 T:0 P:2)\n\n🎯 Objectives:\n• Basics of C language\n• Develop algorithms and solve problems\n\n📚 Module 1: Basics of C, Data Types\n📚 Module 2: Control Structures\n📚 Module 3: Functions and Recursion\n📚 Module 4: Arrays and Pointers\n📚 Module 5: Structures and File I/O\n\n📘 Suggested Books:\n• E. Balagurusamy – Programming in ANSI C\n• Yashavant Kanetkar – Let Us C"
+        },
+        "Workshop Practice": {
+          "type": "text",
+          "text": "📘 PAPER CODE: ME105\n📗 Subject: Workshop Practice\n🔢 Credit: 2 (L:0 T:0 P:4)\n\n🎯 Objectives:\n• Exposure to various manufacturing tools and techniques\n• Hands-on practice on carpentry, fitting, welding, etc.\n\n📘 Modules:\n• Carpentry\n• Fitting\n• Welding\n• Sheet Metal\n• Electrical and Electronics Workshop\n\n📘 Suggested Books:\n• Raghuwanshi – Workshop Technology"
+        }
+      }
+    }
+  }
+}
