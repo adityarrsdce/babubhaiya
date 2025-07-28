@@ -1,0 +1,7 @@
+{
+  "notesCourses": {
+    "BTech": "https://yourdomain.com/notes/btech_notes.json",
+    "Diploma": "https://yourdomain.com/notes/diploma_notes.json",
+    "Nursing": "https://yourdomain.com/notes/nursing_notes.json"
+  }
+}
