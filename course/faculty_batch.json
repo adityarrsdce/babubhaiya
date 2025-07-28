@@ -1,6 +1,0 @@
-{
-  "courses": {
-    "B.Tech": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/btech/pyq/faculty.json",
-    "Diploma": "https://example.com/faculty/diploma.json"
-  }
-}
