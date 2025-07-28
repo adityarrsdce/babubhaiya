@@ -1,0 +1,6 @@
+{
+  "semesters": {
+    "Semester 1": "https://.../cse/sem1.json",
+    "Semester 2": "https://.../cse/sem2.json"
+  }
+}
