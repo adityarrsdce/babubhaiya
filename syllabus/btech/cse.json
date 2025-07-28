@@ -1,87 +1,12 @@
 {
   "branches": {
     "CSE": {
-      "Semester 1": {
-        "ENGINEERING PHYSICS": "https://example.com/syllabus/cse/sem1/engineering_physics.pdf",
-        "ENGINEERING MATHS-I": "https://example.com/syllabus/cse/sem1/engineering_maths_1.pdf",
-        "PROGRAMMING FOR PROBLEM SOLVING": "https://example.com/syllabus/cse/sem1/programming_for_problem_solving.pdf",
-        "IT WORKSHOP": "https://example.com/syllabus/cse/sem1/it_workshop.pdf",
-        "BASIX ELECTRONICS": "https://example.com/syllabus/cse/sem1/basic_electronics.pdf",
-        "SWACHHA BHARAT MISSION (SBM)": "https://example.com/syllabus/cse/sem1/sbm.pdf",
-        "ENGINEERING PHYSICS LAB": "https://example.com/syllabus/cse/sem1/physics_lab.pdf",
-        "PROGRAMMING FOR PROBLEM SOLVING LAB": "https://example.com/syllabus/cse/sem1/programming_lab.pdf",
-        "IT WORKSHOP LAB": "https://example.com/syllabus/cse/sem1/it_workshop_lab.pdf",
-        "BASIX ELECTRONICS LAB": "https://example.com/syllabus/cse/sem1/basic_electronics_lab.pdf"
-      },
-      "Semester 2": {
-        "ENGINEERING CHEMISTRY": "https://example.com/syllabus/cse/sem2/chemistry.pdf",
-        "ENGINEERING MATHEMATICS-II": "https://example.com/syllabus/cse/sem2/maths_2.pdf"
-      },
       "Semester 3": {
-        "ANALOG ELECTRONIC CIRCUITS": "https://example.com/syllabus/cse/sem3/analog_electronic_circuits.pdf",
-        "DATA STRUCTURE AND ALGORITHMS": "https://example.com/syllabus/cse/sem3/data_structures_algorithms.pdf",
-        "OBJECT ORIENTED PROGRAMMING USING C++": "https://example.com/syllabus/cse/sem3/oop_cpp.pdf",
-        "TECHNICAL WRITING": "https://example.com/syllabus/cse/sem3/technical_writing.pdf",
-        "MATHEMATICS -III (DIFFERENTIAL CALCULUS)": "https://example.com/syllabus/cse/sem3/maths_3.pdf",
-        "COMMUNICATIVE ENGLISH": "https://example.com/syllabus/cse/sem3/communicative_english.pdf",
-        "PYTHON PROGRAMMING": "https://example.com/syllabus/cse/sem3/python_programming.pdf",
-        "INTRODUCTION TO WEB DESIGN": "https://example.com/syllabus/cse/sem3/web_design.pdf",
-        "Sports/Yoga/NCC/NSS": "https://example.com/syllabus/cse/sem3/sports_yoga_ncc_nss.pdf",
-        "ENGINEERING CHEMISTRY LAB": "https://example.com/syllabus/cse/sem3/chemistry_lab.pdf",
-        "COMMUNICATIVE ENGLISH LAB": "https://example.com/syllabus/cse/sem3/english_lab.pdf",
-        "PYTHON PROGRAMMING LAB": "https://example.com/syllabus/cse/sem3/python_lab.pdf",
-        "INTRODUCTION TO WEB DESIGN LAB": "https://example.com/syllabus/cse/sem3/web_design_lab.pdf"
-      },
-      "Semester 4": {
-        "DISCRETE MATHEMATICS": "https://example.com/syllabus/cse/sem4/discrete_math.pdf",
-        "COMPUTER ORGANISATION AND ARCHITECTURE": "https://example.com/syllabus/cse/sem4/computer_architecture.pdf",
-        "OPERATING SYSTEMS": "https://example.com/syllabus/cse/sem4/operating_systems.pdf",
-        "DESIGN AND ANALYSIS OF ALGORITHM": "https://example.com/syllabus/cse/sem4/daa.pdf",
-        "DIGITAL ELECTRONICS": "https://example.com/syllabus/cse/sem4/digital_electronics.pdf",
-        "HUMAN RESOURCES DEVELOPMENT AND ORGANISATIONAL BEHAVIOR": "https://example.com/syllabus/cse/sem4/hrdob.pdf",
-        "ENVIRONMENTAL SCIENCE": "https://example.com/syllabus/cse/sem4/environmental_science.pdf"
-      },
-      "Semester 5": {
-        "DATABASE MANAGEMENT SYSTEMS": "https://example.com/syllabus/cse/sem5/dbms.pdf",
-        "FORMAL LANGUAGE AND AUTOMATA THEORY": "https://example.com/syllabus/cse/sem5/flat.pdf",
-        "ARTIFICIAL INTELLIGENCE": "https://example.com/syllabus/cse/sem5/ai.pdf",
-        "SOFTWARE ENGINEERING": "https://example.com/syllabus/cse/sem5/software_engineering.pdf",
-        "PROFESSIONAL SKILL DEVELOPMENT": "https://example.com/syllabus/cse/sem5/psd.pdf",
-        "SOFTWARE TRAINING": "https://example.com/syllabus/cse/sem5/software_training.pdf",
-        "CONSTITUTION OF INDIA / ESSENCE OF INDIAN KNOWLEDGE TRADITIONAL": "https://example.com/syllabus/cse/sem5/constitution_india.pdf",
-        "MOOCS/SWAYAM / NPTEL ETC. COURSES -I": "https://example.com/syllabus/cse/sem5/moocs1.pdf",
-        "SUMMER ENTREPRENEURSHIP -II": "https://example.com/syllabus/cse/sem5/summer_entrepreneurship_2.pdf",
-        "SEMINAR": "https://example.com/syllabus/cse/sem5/seminar.pdf"
-      },
-      "Semester 6": {
-        "COMPILER DESIGN": "https://example.com/syllabus/cse/sem6/compiler_design.pdf",
-        "COMPUTER NETWORKS": "https://example.com/syllabus/cse/sem6/computer_networks.pdf",
-        "MACHINE LEARNING": "https://example.com/syllabus/cse/sem6/machine_learning.pdf",
-        "PROGRAM ELECTIVE- I": "https://example.com/syllabus/cse/sem6/program_elective_1.pdf",
-        "PROGRAM ELECTIVE- II": "https://example.com/syllabus/cse/sem6/program_elective_2.pdf",
-        "PROFESSIONAL ELECTIVE LAB-I": "https://example.com/syllabus/cse/sem6/prof_elective_lab1.pdf",
-        "MOOCS/SWAYAM / NPTEL COURSES - 2": "https://example.com/syllabus/cse/sem6/moocs2.pdf",
-        "PROJECT - 1": "https://example.com/syllabus/cse/sem6/project1.pdf",
-        "GRADUATE EMPLOYABILITY SKILLS AND COMPETITIVE COURSES (GATE, IES, ETC.)": "https://example.com/syllabus/cse/sem6/employability_skills.pdf"
-      },
-      "Semester 7": {
-        "BIOLOGY FOR ENGINEERS": "https://example.com/syllabus/cse/sem7/biology_for_engineers.pdf",
-        "INDUCTION PROGRAM": "https://example.com/syllabus/cse/sem7/induction_program.pdf",
-        "OPEN ELECTIVE -I": "https://example.com/syllabus/cse/sem7/open_elective_1.pdf",
-        "OPEN ELECTIVE -II": "https://example.com/syllabus/cse/sem7/open_elective_2.pdf",
-        "PROGRAM ELECTIVE -III": "https://example.com/syllabus/cse/sem7/program_elective_3.pdf",
-        "PROJECT -1": "https://example.com/syllabus/cse/sem7/project1.pdf",
-        "SUMMER ENTREPRENEURSHIP-III": "https://example.com/syllabus/cse/sem7/summer_entrepreneurship_3.pdf",
-        "PROFESSIONAL ELECTIVE LAB -II": "https://example.com/syllabus/cse/sem7/prof_elective_lab2.pdf"
-      },
-      "Semester 8": {
-        "OPEN ELECTIVE - III": "https://example.com/syllabus/cse/sem8/open_elective_3.pdf",
-        "OPEN ELECTIVE -IV": "https://example.com/syllabus/cse/sem8/open_elective_4.pdf",
-        "PROGRAM ELECTIVE -IV": "https://example.com/syllabus/cse/sem8/program_elective_4.pdf",
-        "PROGRAM ELECTIVE -V": "https://example.com/syllabus/cse/sem8/program_elective_5.pdf",
-        "PROJECT -II": "https://example.com/syllabus/cse/sem8/project2.pdf"
+        "Analog Electronic Circuits": {
+          "type": "text",
+          "text": "📘 PAPER CODE: ESC 301\n📗 Subject: Analog Electronic Circuits\n🔢 Credit: 5 (L:3 T:0 P:4)\n\n🎯 Objectives:\n• To learn the fundamentals of analog electronic circuits.\n• To design, construct and debug analog electronic circuits.\n• Understand terminal characteristics and equivalent circuit models for diodes, transistors, and op-amps.\n• Study of differential amplifiers, cascaded amplifiers' frequency response, and gain-bandwidth considerations.\n• Applications of op-amps (linear and nonlinear).\n\n📚 Module 1: Diode Circuits\n• P-N junction diode, I-V characteristics\n• Half-wave and full-wave rectifiers\n• Zener diodes, clamping and clipping circuits\n\n📚 Module 2: BJT Circuits\n• Structure and I-V characteristics\n• BJT as switch and amplifier (small-signal model)\n• Biasing circuits, current mirror\n• CE, CB, CC amplifiers, small signal & high-frequency models\n\n📚 Module 3: MOSFET Circuits\n• MOSFET structure, I-V characteristics\n• Switching and amplifier operation\n• Common-source/gate/drain amplifiers\n• Gain, impedance, transconductance, HF model\n\n📚 Module 4: Differential & Operational Amplifiers\n• Differential amplifier, power amplifier\n• Multistage amplifiers\n• Op-amp internal structure and non-idealities\n\n📚 Module 5: Linear Applications of Op-Amp\n• Inverting & non-inverting amplifiers\n• Instrumentation amplifier, integrator\n• Active filters, PID controllers, lead/lag compensators\n• Voltage regulator, Wein & phase shift oscillators\n• ADC basics\n\n📚 Module 6: Nonlinear Applications of Op-Amp\n• Hysteretic comparator, zero crossing detector\n• Square & triangular wave generators\n• Precision rectifier, peak detector, monoshot\n\n📘 Suggested Books:\n• A S Sedra & K. C. Smith – Microelectronic Circuits\n• J. V. Wait et al. – Operational Amplifier Theory\n• J. Millman & A. Grabel – Microelectronics\n• P. Horowitz & W. Hill – The Art of Electronics\n• P.R. Gray et al. – Analog Integrated Circuits"
+        }
       }
     }
-    
-    }
   }
+}
