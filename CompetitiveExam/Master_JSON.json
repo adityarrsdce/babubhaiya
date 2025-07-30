@@ -1,9 +1,5 @@
 {
   "exams": {
-    "SSC CGL": "https://example.com/data/ssc.json",
-    "GATE ECE": "https://example.com/data/gate.json",
-    "UPSC": "https://example.com/data/upsc.json",
-    "JEE": "https://example.com/data/jee.json",
    "UGC NET": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/main/CompetitiveExam/ugc_net.json"
 
   }
