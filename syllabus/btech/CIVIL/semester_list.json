@@ -1,6 +1,9 @@
 {
   "semesters": {
-    "Semester 1": "https://.../cse/sem1.json",
-    "Semester 2": "https://.../cse/sem2.json"
+    "Semester 1": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/syllabus/btech/CIVIL/sem1.json",
+    "Semester 2": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/syllabus/btech/CIVIL/sem2.json",
+    "Semester 3": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/syllabus/btech/CIVIL/sem3.json",
+    "Semester 4": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/syllabus/btech/CIVIL/sem4.json",
+    "Semester 5": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/syllabus/btech/CIVIL/sem5.json"
   }
 }
