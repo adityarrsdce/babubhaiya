@@ -1,11 +1,11 @@
 {
   "branches": {
     "CSE": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/syllabus/btech/CSE/semester_list.json",
-    "ECE": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/syllabus/btech/ECE.json",
+    "ECE": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/syllabus/btech/ECE/semester_list.json",
     "EEE": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/syllabus/btech/EEE/semester_list.json",
     "MECHANICAL": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/syllabus/btech/Mechanical.json",
     "CIVIL": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/syllabus/btech/CIVIL/semester_list.json",
-    "IT": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/syllabus/btech/it.json"
-
+    "IT": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/syllabus/btech/IT/semester_list.json",
+    "CHEMICAL": ""
   }
 }
