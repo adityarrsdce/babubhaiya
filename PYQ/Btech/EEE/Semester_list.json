@@ -1,0 +1,13 @@
+{
+  "semesters": {
+    "1st": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/main/PYQ/Btech/CSE/1ST.json",
+    "2nd": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/main/PYQ/Btech/CSE/2ND.json",
+    "3rd": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/main/PYQ/Btech/CSE/3RD.json",
+    "4th": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/main/PYQ/Btech/CSE/4TH.json",
+    "5th": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/main/PYQ/Btech/CSE/5TH.json",
+    "6th": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/main/PYQ/Btech/CSE/6TH.json",
+    "7th": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/main/PYQ/Btech/CSE/7TH.json",
+    "8th": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/main/PYQ/Btech/CSE/8TH.json"
+  }
+}
+ 
