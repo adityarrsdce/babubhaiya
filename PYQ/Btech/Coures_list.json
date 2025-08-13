@@ -1,6 +1,5 @@
 {
   "courses": {
-    "BTech": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/PYQ/Btech/Branch_list.json",
-    "Diploma": "https://raw.githubusercontent.com/yourrepo/pyq/diploma_branches.json"
+    "BTech": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/PYQ/Btech/Branch_list.json"
   }
 }
