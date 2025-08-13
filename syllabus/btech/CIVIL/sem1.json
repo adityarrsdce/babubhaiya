@@ -38,8 +38,41 @@
   "2415502 RCC Structure": {
     "type": "text",
     "text": "A) Course Code:\n2415502 (T2415502 / P2415502 / S2415502)\n\nB) Course Title:\nRCC Structure\n\nC) Pre-requisite Courses:\nStrength of Material\n\nTheory of Structure\n\nConcrete Technology\n\nD) Rationale:\nInfrastructure development is vital for economic growth. This course equips students to design safe, durable reinforced concrete structures (buildings, bridges, etc.) by:\n\nUnderstanding design concepts and structural behavior.\n\nEnsuring quality supervision and on-site execution.\n\nIncorporating precast and pre-stressed concrete applications.\n\nE) Course Outcomes (COs):\nAfter completing this course, students will be able to:\n\nCO-1: Design singly reinforced rectangular beams (Limit State Method/Working Stress Method).\n\nCO-2: Design doubly reinforced rectangular beams (LSM).\n\nCO-3: Design shear reinforcement for beams as per IS 456:2000.\n\nCO-4: Design slabs (one-way, two-way, cantilever) under given loads.\n\nCO-5: Design axially loaded short columns and isolated square footings (IS 456:2000).\n\nF) Course Articulation Matrix (CAM):\nCOs\tPO-1 (Knowledge)\tPO-2 (Problem Analysis)\tPO-3 (Design)\tPO-4 (Tools)\tPO-5 (Sustainability)\tPO-6 (Mgmt.)\tPO-7 (Learning)\nCO-1\t3 (High)\t3\t2\t-\t1\t-\t1\nCO-2\t3\t3\t2\t-\t1\t-\t1\nCO-3\t3\t2\t2\t-\t1\t-\t1\nCO-4\t3\t3\t2\t-\t1\t-\t1\nCO-5\t3\t3\t2\t-\t1\t-\t1\n*(Legend: 3=High, 2=Medium, 1=Low, -=No mapping)*\n\nG) Teaching & Learning Scheme:\nComponent\tHours/Week\tTotal Hours\tCredits\nTheory (CI)\t3 (L) + 0 (T)\t48\t3\nPractical (LI)\t4\t64\t2\nTerm Work (TW) + Self-Learning (SL)\t2\t32\t1\nTotal\t9\t144\t6\nH) Assessment Scheme:\nComponent\tMarks\nTheory (TA)\t100\n- Progressive Theory Assessment (PTA)\t30\n- End Theory Assessment (ETA)\t70\nTerm Work & Self-Learning (TWA)\t50\n- Internal (40%)\t20\n- External (60%)\t30\nLab Assessment (LA)\t50\n- Progressive Lab Assessment (PLA)\t20\n- End Lab Assessment (ELA)\t30\nTotal\t200\nI) Theory Curriculum (T2415502):\nUnit 1: Introduction to RCC & Design Methods\nStress-strain curves for concrete & steel.\n\nWorking Stress Method (WSM) vs. Limit State Method (LSM).\n\nAnalysis of singly reinforced beams (under-reinforced/balanced/over-reinforced).\n\nUnit 2: Doubly Reinforced & Flanged Beams (LSM)\nNeed for doubly reinforced beams.\n\nAnalysis of T-beams/L-beams, effective flange width (IS 456:2000).\n\nUnit 3: Shear, Bond & Development Length\nShear reinforcement design (IS 456).\n\nBond stress, development length, lapping of bars.\n\nUnit 4: Slab Design (LSM)\nOne-way/cantilever/two-way slabs (IS Code method).\n\nChecks for deflection, shear, development length.\n\nUnit 5: Column & Footing Design (LSM)\nAxially loaded short columns (square/rectangular/circular).\n\nIsolated square footing design for flexure & shear.\n\nJ) Practical Experiments (P2415502):\nDraw stress-strain diagrams for singly/doubly reinforced beams.\n\nDesign shear reinforcement for beams.\n\nDesign slabs (cantilever, one-way, two-way).\n\nDesign axially loaded columns.\n\nSketch column footing types.\n\nK) Term Work & Activities (S2415502):\nAssignments: Numerical problems on beam/slab/column design.\n\nMicro Projects:\n\nStudy RCC design software (e.g., STAAD.Pro).\n\nSite visit to audit formwork/reinforcement practices.\n\nSeminars: Topics like earthquake-resistant design, FRP concrete.\n\nL) Key Books & Resources:\nUnnikrishna Pillai & Menon – Reinforced Concrete Design (McGraw Hill).\n\nIS 456:2000 – Code for RCC design.\n\nNPTEL Lectures (Online).\n\nM) Lab Equipment:\nDrawing boards, IS codebooks, design charts, software tools.\n\nN) Exam Pattern (Theory):\nUnit\tMarks (ETA)\n1\t14\n2\t14\n3\t11\n4\t14\n5\t17\nTotal\t70\n(20% Rote, 22% Understanding, 28% Application)"
-  }
+  },
+  {
+  "Legend": [
+    { "Code": "PTA", "Meaning": "Progressive Theory Assessment in class room (includes class test, mid-term test and quiz using online/offline modes)" },
+    { "Code": "PLA", "Meaning": "Progressive Laboratory Assessment (includes process and product assessment using rating Scales and rubrics)" },
+    { "Code": "TWA", "Meaning": "Term work & Self Learning Assessment" }
+  ],
+  "Courses": [
+    {
+      "Course Code": "T123",
+      "Title": "Example Course",
+      "Structure": { "L": 3, "T": 1, "P": 0, "Credits": 4 },
+      "Assessment": [
+        { "Type": "PTA", "Marks": 30 },
+        { "Type": "PLA", "Marks": null },
+        { "Type": "TWA", "Marks": 20 },
+        { "Type": "ESE", "Marks": 50 }
+      ]
+    },
+    {
+      "Course Code": "P456",
+      "Title": "Practical Course",
+      "Structure": { "L": 0, "T": 0, "P": 4, "Credits": 2 },
+      "Assessment": [
+        { "Type": "PTA", "Marks": null },
+        { "Type": "PLA", "Marks": 50 },
+        { "Type": "TWA", "Marks": null },
+        { "Type": "ESE", "Marks": 50 }
+      ]
+    }
+  ]
 }
+
+}
+
 
 
 
