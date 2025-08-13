@@ -1,0 +1,32 @@
+{
+    "Engineering Mathematics-I": {
+      "2023": "ics-1/2023.pdf",
+      "2022": "ics-1/2022.pdf",
+      "2021": "ics-1/2021.pdf"
+    },
+    "Engineering Physics": {
+      "2023": "2023.pdf",
+      "2022": "2022.pdf",
+      "2021": "2021.pdf"
+    },
+    "Programming for Problem Solving": {
+      "2023": "lem-solving/2023.pdf",
+      "2022": "lem-solving/2022.pdf",
+      "2021": "lem-solving/2021.pdf"
+    },
+    "BASIC ELECTRONICS ENGG.": {
+      "2023": "gg/2023.pdf",
+      "2022": "gg/2022.pdf",
+      "2021": "gg/2021.pdf"
+    },
+    "Swachha Bharat Mission (SBM)": {
+      "2023": "on/2023.pdf",
+      "2022": "on/2022.pdf",
+      "2021": "on/2021.pdf"
+    },
+    "IT WORKSHOP": {
+      "2023": "",
+      "2022": "",
+      "2021": ""
+    }
+}

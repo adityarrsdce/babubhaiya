@@ -1,0 +1,32 @@
+{
+  "TECHNICAL WRITING": {
+    "2019": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/3rd/tw/Tw-2019.pdf",
+    "2022": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/3rd/tw/Tw-2021.pdf",
+    "2023": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/3rd/tw/Tw-2022.pdf"
+  },
+  "DSA": {
+    "2019": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/3rd/dsa/DSA-2019.pdf",
+    "2020": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/3rd/dsa/DSA-2020.pdf",
+    "2021": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/3rd/dsa/dsa-2021.pdf",
+    "2022": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/3rd/dsa/DSA-2022.pdf",
+    "2023": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/3rd/dsa/DSA-2023.pdf"
+  },
+  "MATHS": {
+    "2019": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/3rd/maths/MATHS-2019.pdf",
+    "2020": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/3rd/maths/MATHS-2020.pdf",
+    "2022": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/3rd/maths/MATHS-2022.pdf"
+  },
+  "OBJECT ORIENTED PROGRAMMING": {
+    "2019": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/3rd/oop-cpp/OOP-2019.pdf",
+    "2020": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/3rd/oop-cpp/OOP-2020.pdf",
+    "2022": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/3rd/oop-cpp/OOP-2022.pdf",
+    "2023": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/3rd/oop-cpp/OOP-2023.pdf"
+  },
+  "ANALOG ELECTRONIC CIRCUITS": {
+    "2019": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/3rd/aec/AEC-2019.pdf",
+    "2020": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/3rd/aec/AEC-2020.pdf",
+    "2021": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/3rd/aec/ACE-2021.pdf",
+    "2022": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/3rd/aec/AEC-2022.pdf",
+    "2023": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/3rd/aec/Aec-2023.pdf"
+  }
+}
