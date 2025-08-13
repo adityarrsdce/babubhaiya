@@ -1,5 +1,5 @@
 {
-  "CSE": "https://yourserver.com/pyqs/CSE.json",
+  "CSE": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/PYQ/Btech/CSE/Semester_list.json",
   "MECHANICAL": "https://yourserver.com/pyqs/MECHANICAL.json",
   "EEE": "https://yourserver.com/pyqs/EEE.json",
   "CHEMICAL": "https://yourserver.com/pyqs/CHEMICAL.json",
