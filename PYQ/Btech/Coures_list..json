@@ -1,0 +1,13 @@
+{
+  "BTech": {
+    "CSE": "https://example.com/json/btech_cse.json",
+    "ECE": "https://example.com/json/btech_ece.json",
+    "ME": "https://example.com/json/btech_me.json",
+    "CE": "https://example.com/json/btech_ce.json"
+  },
+  "Diploma": {
+    "CSE": "https://example.com/json/diploma_cse.json",
+    "EE": "https://example.com/json/diploma_ee.json",
+    "ME": "https://example.com/json/diploma_me.json"
+  }
+}
