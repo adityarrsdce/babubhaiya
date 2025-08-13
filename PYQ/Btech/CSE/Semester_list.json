@@ -1,10 +1,10 @@
 {
-  "1ST": "https://yourserver.com/pyqs/BTECH/CSE/1ST.json",
-  "2ND": "https://yourserver.com/pyqs/BTECH/CSE/2ND.json",
-  "3RD": "https://yourserver.com/pyqs/BTECH/CSE/3RD.json",
-  "4TH": "https://yourserver.com/pyqs/BTECH/CSE/4TH.json",
-  "5TH": "https://yourserver.com/pyqs/BTECH/CSE/5TH.json",
-  "6TH": "https://yourserver.com/pyqs/BTECH/CSE/6TH.json",
-  "7TH": "https://yourserver.com/pyqs/BTECH/CSE/7TH.json",
-  "8TH": "https://yourserver.com/pyqs/BTECH/CSE/8TH.json"
+  "1ST SEMESTER": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/PYQ/Btech/CSE/1ST.json",
+  "2ND SEMESTER": "https://yourserver.com/pyqs/BTECH/CSE/2ND.json",
+  "3RD SEMESTER": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/PYQ/Btech/CSE/3RD.json",
+  "4TH SEMESTER": "https://yourserver.com/pyqs/BTECH/CSE/4TH.json",
+  "5TH SEMESTER": "https://yourserver.com/pyqs/BTECH/CSE/5TH.json",
+  "6TH SEMESTER": "https://yourserver.com/pyqs/BTECH/CSE/6TH.json",
+  "7TH SEMESTER": "https://yourserver.com/pyqs/BTECH/CSE/7TH.json",
+  "8TH SEMESTER": "https://yourserver.com/pyqs/BTECH/CSE/8TH.json"
 }
