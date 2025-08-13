@@ -1,0 +1,7 @@
+{
+  "CSE": "https://yourserver.com/pyqs/CSE.json",
+  "MECHANICAL": "https://yourserver.com/pyqs/MECHANICAL.json",
+  "EEE": "https://yourserver.com/pyqs/EEE.json",
+  "CHEMICAL": "https://yourserver.com/pyqs/CHEMICAL.json",
+  "CIVIL": "https://yourserver.com/pyqs/CIVIL.json"
+}
