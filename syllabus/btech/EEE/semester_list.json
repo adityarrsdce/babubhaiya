@@ -1,11 +1,11 @@
 {
   "semesters": {
-    "Semester 1": "https://yourdomain.com/cse/sem1.json",
-    "Semester 2": "https://yourdomain.com/cse/sem2.json",
+    "Semester 1": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/syllabus/btech/EEE/sem1.json",
+    "Semester 2": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/syllabus/btech/EEE/sem2.json",
     "Semester 3": "https://yourdomain.com/cse/sem3.json",
-    "Semester 4": "https://yourdomain.com/cse/sem4.json",
+    "Semester 4": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/syllabus/btech/EEE/sem4.json",
     "Semester 5": "https://yourdomain.com/cse/sem5.json",
-    "Semester 6": "https://yourdomain.com/cse/sem6.json",
+    "Semester 6": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/syllabus/btech/EEE/sem6.json",
     "Semester 7": "https://yourdomain.com/cse/sem7.json",
     "Semester 8": "https://yourdomain.com/cse/sem8.json"
   }
