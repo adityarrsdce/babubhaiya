@@ -1,6 +1,5 @@
 {
-  "courses": {
-    "Communicative English": {
+  "Communicative English": {
       "type": "text",
       "text": "📘 COURSE CODE: 100103\n📗 Subject: Communicative English\n\n📚 UNIT 1.0: Vocabulary Building (7 hrs)\nNature of Word Formation; Root Word and Morpheme; Prefix and Suffix; Foreign Expressions in English; Synonym and Antonym; Homophone and Homograph; Abbreviation and Acronym.\n\n📚 UNIT 2.0: Basic Writing Skills (7 hrs)\nParts of Speech: Types of Words; Structures of Sentence; Kind of Sentence; Phrase and Clause; Punctuation Marks; Capitalization; Tenses: Present, Past and Future; Voices: Active and Passive; Formation of Questions using Primary Auxiliaries, Modals and Wh-Words.\n\n📚 UNIT 3.0: Common Errors in English (7 hrs)\nArticles; Prepositions; Modifiers; Subject-Verb Agreement; Noun-Pronoun agreement; Redundancies; Cliches; Spelling Error.\n\n📚 UNIT 4.0: Principles of Appropriate Writing (7 hrs)\nDefining: Describing, Classifying and Exemplifying; Introduction, Body, and Conclusion; References, Quotations and Illustrations; Organizing the Paragraphs in a Document; 7Cs of the Professional Writing: Clear, Concise, Concrete, Correct, Coherent, Complete and Courteous.\n\n📚 UNIT 5.0: Practices of Formal Writing (7 hrs)\nFormal Letter: Cover-Letter and Application; Resume Writing; Report Writing; Minutes of Meeting; Memorandum; Notice; Essay Writing: Personal and Impersonal; Email Writing Etiquettes; Article Writing; Writing for Current Social Media.\n\n📚 UNIT 6.0: Comprehension of Written English (7 hrs)\nOf Studies (Essay) by Sir Francis Bacon; The Sun Rising (Poem) by John Donne; The Last Leaf (Story) by O Henry; Unseen/Untaught Passage.\n\n📘 TEXT / REFERENCE BOOKS:\n1. English language and communication skills for engineers, Sanjay Kumar,Pushp Iata, Oxford university Press\n2. Communicative English for Technical student, Dr. Bijay Bhadur Singh and Dr. Kalpana Sinha, Foundation publishing House (FPM)\n3. Communication Skill (As per VRV syllabus 2018), Sanjay Kumar and Pushp Iata, Oxford University Press\n4. A course in Listening & Speaking, V. Sasi Kumar ,P. Kiranmal Dutt and Geetha Rajeevan, Foundation Books"
     },
@@ -39,6 +38,5 @@
     "Sports/Yoga/NCC/NSS": {
       "type": "text",
       "text": "📘 COURSE CODE: 100109P\n📗 Subject: Sports/Yoga/NCC/NSS\n\n🎯 COURSE OBJECTIVES:\n(a) Encouraging creativity and innovation\n(b) Enhancing problem-solving skills\n(c) Developing project management skills\n(d) Promoting interdisciplinary collaboration\n(e) Facilitating practical application of engineering concepts\n\n🏆 COURSE OUTCOME:\n1. Developed innovative projects\n2. Improved critical thinking and problem-solving skills\n3. Enhanced project management and teamwork skills\n4. Increased interdisciplinary knowledge and collaboration\n5. Cultivated a mindset of innovation and entrepreneurship\n\n📝 List of Reports: Any topics related to innovative project."
-    }
   }
 }
