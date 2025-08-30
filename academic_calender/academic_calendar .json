@@ -1,5 +1,5 @@
 {
-  "courses": {
-    "BTech": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/academic_calender/btech",
+  "events": {
+    "BTECH": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/academic_calender/btech"
   }
 }
