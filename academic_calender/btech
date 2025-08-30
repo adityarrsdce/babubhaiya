@@ -1,15 +1,6 @@
 {
-  "branches": {
-    "CSE": {
-      "Semester 1": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/academic_calendar/6th_sem.jpeg",
-      "Semester 2": "https://example.com/calendars/btech/cse/sem2.jpg"
-    },
-    "ECE": {
-      "Semester 1": "https://example.com/calendars/btech/ece/sem1.pdf",
-      "Semester 2": "https://example.com/calendars/btech/ece/sem2.png"
-    },
-    "MECH": {
-      "Semester 1": "https://example.com/calendars/btech/mech/sem1.pdf"
-    }
+  "semesters": {
+    "Semester 1": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/academic_calendar/6th_sem.jpeg"
   }
 }
+
