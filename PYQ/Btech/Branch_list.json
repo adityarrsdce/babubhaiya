@@ -1,10 +1,5 @@
 {
   "branches": {
     "CSE": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/PYQ/Btech/CSE/Semester_list.json",
-    "ECE": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/PYQ/Btech/ECE/Semester_list.json",
-    "EEE": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/PYQ/Btech/EEE/Semester_list.json",
-    "MECHANICAL": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/PYQ/Btech/MECHANICAL/Semester_list.json",
-    "CIVIL": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/PYQ/Btech/CIVIL/Semester_list.json",
-    "CHEMICAL": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/PYQ/Btech/CHEMICAL/Semester_list.json"
   }
 }
