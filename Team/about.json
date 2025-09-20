@@ -1,6 +1,6 @@
 {
   "title": {"text": "About This App", "bold": true},
-  "description": {"text": "EduConnect is an educational platform built for B.Tech, Nursing, Diploma, ITI and Paramedical students. It provides access to Previous Year Question Papers (PYQs), Syllabus, Results, and Top College.", "bold": false},
+  "description": {"text": "Study saathi is an educational platform built for B.Tech, Nursing, Diploma, ITI and Paramedical students. It provides access to Previous Year Question Papers (PYQs), Syllabus, Results, and Top College.", "bold": false},
   "developer": {"text": "Aditya Raj", "bold": true},
   "team_heading": {"text": "Meet the Team", "bold": true},
   "team_members": [
