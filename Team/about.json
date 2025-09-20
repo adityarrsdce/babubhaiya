@@ -1,0 +1,15 @@
+{
+  "title": {"text": "About This App", "bold": true},
+  "description": {"text": "EduConnect is an educational platform built for B.Tech, Nursing, Diploma, ITI and Paramedical students. It provides access to Previous Year Question Papers (PYQs), Syllabus, Results, and Top College.", "bold": false},
+  "developer": {"text": "Aditya Raj", "bold": true},
+  "team_heading": {"text": "Meet the Team", "bold": true},
+  "team_members": [
+    {"text": "Member 1", "bold": false},
+    {"text": "Member 2", "bold": false},
+    {"text": "Member 3", "bold": false}
+  ],
+  "join_heading": {"text": "Want to Join the Team?", "bold": true},
+  "join_description": {"text": "If you are interested in contributing to this project (design, development, or content), feel free to message me directly on LinkedIn.", "bold": false},
+  "linkedin_text": {"text": "Tap here to join via LinkedIn", "bold": true},
+  "linkedin_url": "https://www.linkedin.com/in/ajheros/"
+}
