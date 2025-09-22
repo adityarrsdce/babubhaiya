@@ -1,0 +1,16 @@
+{
+  "COA": {
+    "2022": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/4th/COA/COA-2022.pdf",
+    "2023": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/4th/COA/COA-2023.pdf",
+    "2024": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/4th/COA/COA-2024.pdf"
+  },
+  "HROB":{
+    "2019": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/4th/HROB/HROB-2019.pdf",
+    "2022": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/4th/HROB/HROB-2022.pdf",
+    "2023": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/4th/HROB/HROB-2023.pdf",
+    "2024": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/4th/HROB/HROB-2024.pdf"
+  },
+  "OS": {
+    "2023": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/CSE/4th/OS/OS-2023.pdf"
+  }
+}
