@@ -1,14 +1,10 @@
 {
-  "BTech": {
-    "semesters": {
-      "1": "https://results.beup.ac.in/ResultsBTech1stSem2024_B2024Pub.aspx",
-      "2": "https://results.beup.ac.in/ResultsBTech2ndSem2024_B2023Pub.aspx",
-      "3": "https://beu-bih.ac.in/result-two/B.Tech.%203rd%20Semester%20Examination,%202024?semester=3&session=2024&exam_held=July%2F2025",
-      "4": "https://results.beup.ac.in/ResultsBTech4thSem2024_B2022Pub.aspx",
-      "5": "https://results.beup.ac.in/ResultsBTech5thSem2023_B2021Pub.aspx",
-      "6": "https://results.beup.ac.in/RestulBTech6thSem2024_B2021Pub.aspx",
-      "7": "https://results.beup.ac.in/ResultsBTech7thSem2024_B2021Pub.aspx",
-      "8": "https://results.beup.ac.in/ResultsBTech8thSem2024_B2021Pub.aspx"
-    }
-  }
+  "1": "https://example.com/result_sem1",
+  "2": "https://example.com/result_sem2",
+  "3": "https://example.com/result_sem3",
+  "4": "https://example.com/result_sem4",
+  "5": "https://example.com/result_sem5",
+  "6": "https://example.com/result_sem6",
+  "7": "https://example.com/result_sem7",
+  "8": "https://example.com/result_sem8"
 }
