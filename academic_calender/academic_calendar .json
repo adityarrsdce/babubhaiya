@@ -1,5 +1,8 @@
+
 {
-  "events": {
-    "BTECH": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/academic_calender/btech"
+  "semesters": {
+    "Semester 1": "https://example.com/sem1.pdf",
+    "Semester 2": "https://example.com/sem2.pdf",
+    "Semester 3": "https://example.com/sem3.jpg"
   }
 }
