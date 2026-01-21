@@ -60,6 +60,8 @@ dependencies {
     implementation("androidx.compose.ui:ui-tooling-preview")
     implementation(libs.play.services.measurement.api)
     implementation(libs.firebase.crashlytics.buildtools)
+    implementation(libs.androidx.compose.material3)
+    implementation(libs.androidx.compose.animation)
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
     implementation("io.ktor:ktor-client-core:2.3.4")
@@ -93,6 +95,14 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+
+    // 🔄 Play Store In-App Update
+    implementation("com.google.android.play:app-update:2.1.0")
+    implementation("com.google.android.play:app-update-ktx:2.1.0")
+
+    implementation("com.airbnb.android:lottie-compose:6.4.0")
+
+
 
 
 

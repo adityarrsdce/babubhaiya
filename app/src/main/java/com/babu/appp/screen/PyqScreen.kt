@@ -19,6 +19,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.luminance
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
@@ -65,7 +66,7 @@ fun PyqScreen() {
     var semesterMap by remember { mutableStateOf<Map<String, String>>(emptyMap()) }
     var subjectYearMap by remember { mutableStateOf<SubjectYearMap>(emptyMap()) }
 
-    val isDark = isSystemInDarkTheme()
+    val isDark = MaterialTheme.colorScheme.background.luminance() < 0.5f
     val cardBgColor =
         if (isDark) Color(0xFF2C2C2C).copy(alpha = 0.95f) else Color.White.copy(alpha = 0.96f)
     val textColor = if (isDark) Color.White else Color.Black

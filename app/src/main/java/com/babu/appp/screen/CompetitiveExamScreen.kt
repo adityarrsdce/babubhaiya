@@ -14,6 +14,7 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.*
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.luminance
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
@@ -62,7 +63,7 @@ fun downloadCompetitivePdf(context: Context, fileUrl: String, fileName: String) 
 fun CompetitiveExamScreenUI(navController: NavHostController) {
     val context = LocalContext.current
     val activity = context as? Activity
-    val isDark = isSystemInDarkTheme()
+    val isDark = MaterialTheme.colorScheme.background.luminance() < 0.5f
     val background: Painter = if (isDark) painterResource(R.drawable.pyq_dark) else painterResource(R.drawable.pyq_light)
     val commonThumbnail = painterResource(R.drawable.pdf_icon)
 

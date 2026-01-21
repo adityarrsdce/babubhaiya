@@ -14,6 +14,9 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.compose.foundation.isSystemInDarkTheme
+import androidx.compose.runtime.*
+import androidx.compose.runtime.saveable.rememberSaveable
 import com.babu.appp.Navigation.AppNavigation
 import com.babu.appp.ui.theme.ApppTheme
 import com.google.android.gms.ads.*
@@ -30,7 +33,6 @@ class MainActivity : ComponentActivity() {
     private var mInterstitialAd: InterstitialAd? = null
     private val TAG = "MainActivity"
 
-    // Runtime permission for Android 13+ notification
     private val requestNotificationPermissionLauncher = registerForActivityResult(
         ActivityResultContracts.RequestPermission()
     ) { isGranted ->
@@ -47,19 +49,15 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
-        // ✅ Firebase Analytics
         firebaseAnalytics = Firebase.analytics
         firebaseAnalytics.logEvent(FirebaseAnalytics.Event.APP_OPEN, null)
 
-        // ✅ Notification permission for Android 13+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             requestNotificationPermissionLauncher.launch(Manifest.permission.POST_NOTIFICATIONS)
         }
 
-        // ✅ Create custom notification channel
         createNotificationChannel()
 
-        // ✅ Firebase Messaging: Get FCM token
         FirebaseMessaging.getInstance().token.addOnCompleteListener { task ->
             if (task.isSuccessful) {
                 Log.d(TAG, "FCM Token: ${task.result}")
@@ -68,33 +66,42 @@ class MainActivity : ComponentActivity() {
             }
         }
 
-        // ✅ AdMob Init
         MobileAds.initialize(this)
-
-        // ✅ (Optional) Test Device Setup
-        /*val testDeviceIds = listOf("631C9C6AE7F9C35179C286BE45471BC1") // replace with your test device ID
-        val configuration = RequestConfiguration.Builder()
-            .setTestDeviceIds(testDeviceIds)
-            .build()
-        MobileAds.setRequestConfiguration(configuration)*/
-
-        // ✅ Load interstitial ad
         loadInterstitialAd()
 
-        // ✅ Set Compose Content
+        // ✅ FINAL THEME SETUP (AUTO + MANUAL BOTH FIXED)
         setContent {
-            ApppTheme {
-                AppNavigation() // Your main NavHost or screen composables
+
+            // 1️⃣ Read system theme
+            val systemDark = isSystemInDarkTheme()
+
+            // 2️⃣ Remember theme state, saved across recompositions
+            var isDarkMode by rememberSaveable { mutableStateOf(systemDark) }
+
+            // 3️⃣ If system theme changes AND user never toggled manually,
+            //    then sync again with system
+            LaunchedEffect(systemDark) {
+                isDarkMode = systemDark
+            }
+
+            ApppTheme(darkTheme = isDarkMode) {
+
+                AppNavigation(
+                    isDarkMode = isDarkMode,
+                    onThemeToggle = {
+                        // Manual override
+                        isDarkMode = !isDarkMode
+                    }
+                )
             }
         }
     }
 
-    // 👇 Load interstitial ad (once)
     private fun loadInterstitialAd() {
         val adRequest = AdRequest.Builder().build()
         InterstitialAd.load(
             this,
-            "ca-app-pub-4302526630220985/2830135242", // ✅ Replace with real interstitial Ad Unit
+            "ca-app-pub-4302526630220985/2830135242",
             adRequest,
             object : InterstitialAdLoadCallback() {
                 override fun onAdLoaded(ad: InterstitialAd) {
@@ -110,7 +117,6 @@ class MainActivity : ComponentActivity() {
         )
     }
 
-    // 🔹 Call this method from any screen to show ad (if loaded)
     fun showInterstitialAdIfReady() {
         if (mInterstitialAd != null) {
             mInterstitialAd?.show(this)
@@ -119,7 +125,6 @@ class MainActivity : ComponentActivity() {
         }
     }
 
-    // 🔔 Create high-priority custom notification channel with sound & vibration
     private fun createNotificationChannel() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             val channelId = "babu_bhaiya_channel"

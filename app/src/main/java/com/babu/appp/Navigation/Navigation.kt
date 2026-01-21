@@ -1,6 +1,5 @@
 package com.babu.appp.Navigation
 
-
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
@@ -11,37 +10,63 @@ import com.babu.appp.AnalyticsHelper.AnalyticsNavObserver
 import com.babu.appp.screen.*
 import com.babu.appp.screen.bottom_bar.AboutScreen
 
-
 @Composable
-fun AppNavigation() {
+fun AppNavigation(
+    isDarkMode: Boolean,              // 👈 from MainActivity
+    onThemeToggle: () -> Unit         // 👈 from MainActivity
+) {
+
     val navController = rememberNavController()
     val currentRoute = navController.currentBackStackEntryAsState().value?.destination?.route
     AnalyticsNavObserver(navController)
 
-    val showBottomBar = currentRoute in listOf("home", "about", "ranking", "college", "events")
+    val showBottomBar = currentRoute in listOf(
+        "home",
+        "about",
+        "ranking",
+        "college",
+        "events"
+    )
 
     Scaffold(
         bottomBar = {
             if (showBottomBar) {
-                BottomNavigationBar(navController)
+                BottomNavigationBar_V1(
+                    navController = navController,
+                    isDarkMode = isDarkMode   // 🔑 THIS LINE IS MUST
+                )
             }
         }
-    ) { innerPadding ->
+    )
+    { innerPadding ->
 
         NavHost(
             navController = navController,
             startDestination = "home"
         ) {
+
+            // 🏠 HOME (THEME ICON WORKS FROM HERE)
             composable("home") {
-                HomeScreen(navController = navController, paddingValues = innerPadding)
+                HomeScreen(
+                    navController = navController,
+                    paddingValues = innerPadding,
+                    isDarkMode = isDarkMode,          // 🔑 PASS DOWN
+                    onThemeToggle = onThemeToggle    // 🔑 PASS DOWN
+                )
             }
+
             composable("pyq") { PyqScreen() }
-            //composable("notes") { NotesScreen() }
+
             composable("result") { ResultScreen(navController = navController) }
+
             composable("syllabus") { SyllabusScreen() }
+
             composable("about") { AboutScreen() }
+
             composable("ranking") { RankingScreen() }
+
             composable("college") { HolidayScreen() }
+
             composable("events") { CalendarScreen() }
 
             composable("OtherResultScreen/{courseName}") { backStackEntry ->
@@ -49,10 +74,10 @@ fun AppNavigation() {
                 OtherResultScreen(courseName = courseName)
             }
 
-            // ✅ NEW: Competitive Exam Screen
             composable("comp_exam") {
                 CompetitiveExamScreenUI(navController = navController)
             }
+
             composable("imp") {
                 ImpQScreen()
             }
@@ -64,7 +89,6 @@ fun AppNavigation() {
             composable("feedback") {
                 FeedbackScreen(navController = navController)
             }
-
         }
     }
 }

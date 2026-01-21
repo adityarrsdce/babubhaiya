@@ -12,6 +12,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.luminance
 import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextDecoration
@@ -60,7 +61,7 @@ suspend fun fetchAboutJson(url: String): AboutData? = withContext(Dispatchers.IO
 @Composable
 fun AboutScreen() {
     val uriHandler = LocalUriHandler.current
-    val isDark = isSystemInDarkTheme()
+    val isDark = MaterialTheme.colorScheme.background.luminance() < 0.5f
     val appBarColor = if (isDark) Color(0xFF1C1C1C) else Color(0xFFE5D1B5)
     val appBarTextColor = if (isDark) Color.White else Color.Black
 

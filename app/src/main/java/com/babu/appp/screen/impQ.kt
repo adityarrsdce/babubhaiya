@@ -15,6 +15,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.luminance
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.viewinterop.AndroidView
@@ -41,7 +42,7 @@ fun ImpQScreen() {
     var selectedSemester by remember { mutableStateOf("") }
     var selectedSubject by remember { mutableStateOf<String?>(null) }
 
-    val isDark = isSystemInDarkTheme()
+    val isDark = MaterialTheme.colorScheme.background.luminance() < 0.5f
     val appBarColor = if (isDark) Color(0xFF1C1C1C) else Color(0xFFE5D1B5)
     val appBarTextColor = if (isDark) Color.White else Color.Black
 
@@ -173,7 +174,7 @@ fun ImpQScreen() {
 @Composable
 fun ImpQDropdown(label: String, items: List<String>, selectedItem: String, onSelect: (String) -> Unit) {
     var expanded by remember { mutableStateOf(false) }
-    val isDark = isSystemInDarkTheme()
+    val isDark = MaterialTheme.colorScheme.background.luminance() < 0.5f
     val textColor = if (isDark) Color.White else Color.Black
     val menuBgColor = if (isDark) Color(0xFF2B2B2B) else Color.White
 
