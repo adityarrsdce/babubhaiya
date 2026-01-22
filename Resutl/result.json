@@ -1,10 +1,9 @@
 {
-  "1": "https://example.com/result_sem1",
-  "2": "https://example.com/result_sem2",
-  "3": "https://example.com/result_sem3",
-  "4": "https://example.com/result_sem4",
-  "5": "https://example.com/result_sem5",
-  "6": "https://example.com/result_sem6",
-  "7": "https://example.com/result_sem7",
-  "8": "https://example.com/result_sem8"
+  "1": "https://beu-bih.ac.in/result-two/B.Tech.%201st%20Semester%20Examination,%202024?semester=1&session=2024&exam_held=May%2F2025",
+
+  "3": "https://beu-bih.ac.in/result-two/B.Tech.%203rd%20Semester%20Examination,%202024?semester=3&session=2024&exam_held=July%2F2025",
+
+  "5": "https://beu-bih.ac.in/result-two/B.Tech.%205th%20Semester%20Examination,%202024?semester=5&session=2024&exam_held=July%2F2025",
+
+  "6": "https://beu-bih.ac.in/result-two/B.Tech.%206th%20Semester%20Examination,%202025?semester=6&session=2025&exam_held=November%2F2025"
 }
