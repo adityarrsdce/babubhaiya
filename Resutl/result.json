@@ -1,13 +1,13 @@
 {
+  "1": {
+    "name": "B.Tech. 1st Semester Examination, 2023",
+    "session": "2023",
+    "exam_held": "January/2024"
+  },
   "3": {
     "name": "B.Tech. 3rd Semester Examination, 2024",
     "session": "2024",
     "exam_held": "July/2025"
-  },
-  "2": {
-    "name": "B.Tech. 2nd Semester Examination, 2024",
-    "session": "2024",
-    "exam_held": "DEC/2024"
   },
   "6": {
     "name": "B.Tech. 6th Semester Examination, 2025",
