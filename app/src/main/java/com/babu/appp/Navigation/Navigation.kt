@@ -89,6 +89,11 @@ fun AppNavigation(
             composable("feedback") {
                 FeedbackScreen(navController = navController)
             }
+
+            composable("bulk_result") {
+                BulkResultScreen(navController = navController)
+            }
+
         }
     }
 }

@@ -11,7 +11,6 @@ import android.widget.Toast
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
@@ -37,44 +36,58 @@ import kotlinx.coroutines.*
 import org.json.JSONObject
 import java.net.URL
 
-@OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ResultScreen(navController: NavHostController) {
 
     val context = LocalContext.current
-    val coroutineScope = rememberCoroutineScope()
+    val scope = rememberCoroutineScope()
+
     val isDark = MaterialTheme.colorScheme.background.luminance() < 0.5f
-    val backgroundImage = if (isDark) R.drawable.pyq_dark else R.drawable.pyq_light
+    val bgImage = if (isDark) R.drawable.pyq_dark else R.drawable.pyq_light
+
+    val inputBg = if (isDark) Color.Black else Color.White
+    val inputText = if (isDark) Color.White else Color.Black
 
     var regNo by rememberSaveable { mutableStateOf("") }
     var selectedSemester by rememberSaveable { mutableStateOf("") }
     var resultUrl by remember { mutableStateOf<String?>(null) }
 
     var semesterLinks by remember { mutableStateOf<Map<String, String>>(emptyMap()) }
-
+    var isLoading by remember { mutableStateOf(false) }
     var isRotating by remember { mutableStateOf(false) }
-    val rotationAngle by animateFloatAsState(
-        targetValue = if (isRotating) 360f else 0f,
-        animationSpec = tween(600),
-        label = "rotation"
+
+    val rotation by animateFloatAsState(
+        if (isRotating) 360f else 0f,
+        tween(600),
+        label = ""
     )
 
     val jsonUrl =
         "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/main/Resutl/result.json"
-
-    fun updateResultUrl() {
-        val semUrl = semesterLinks[selectedSemester]
-        if (!semUrl.isNullOrEmpty() && regNo.isNotBlank()) {
-            val romanSem = convertSemesterToRoman(selectedSemester)
-            resultUrl = "$semUrl?Sem=$romanSem&RegNo=$regNo"
-        }
-    }
 
     LaunchedEffect(Unit) {
         semesterLinks = fetchSemesterLinks(jsonUrl) ?: emptyMap()
     }
 
     val semesters = semesterLinks.keys.sorted()
+
+    fun buildResultUrl() {
+        try {
+            val json = JSONObject(semesterLinks[selectedSemester] ?: return)
+            val name = Uri.encode(json.getString("name"))
+            val session = json.getString("session")
+            val examHeld = Uri.encode(json.getString("exam_held"))
+            val roman = convertSemesterToRoman(selectedSemester)
+
+            resultUrl =
+                "https://beu-bih.ac.in/result-three?" +
+                        "name=$name&semester=$roman&session=$session&regNo=$regNo&exam_held=$examHeld"
+
+        } catch (_: Exception) {
+            Toast.makeText(context, "Result not available", Toast.LENGTH_SHORT).show()
+        }
+    }
 
     Scaffold(
         topBar = {
@@ -86,34 +99,36 @@ fun ResultScreen(navController: NavHostController) {
                 ),
                 actions = {
                     IconButton(onClick = {
-                        isRotating = true
-                        updateResultUrl()
-                        Toast.makeText(context, "Reloading result...", Toast.LENGTH_SHORT).show()
-                        coroutineScope.launch {
-                            delay(600)
-                            isRotating = false
+                        if (resultUrl != null) {
+                            isRotating = true
+                            isLoading = true
+                            buildResultUrl()
+                            scope.launch {
+                                delay(600)
+                                isRotating = false
+                            }
                         }
                     }) {
                         Icon(
                             Icons.Default.Refresh,
-                            contentDescription = "Reload",
+                            contentDescription = null,
                             tint = Color.White,
-                            modifier = Modifier.rotate(rotationAngle)
+                            modifier = Modifier.rotate(rotation)
                         )
                     }
                 }
             )
         }
-    ) { paddingValues ->
+    ) { pad ->
 
         Box(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(paddingValues)
+                .padding(pad)
         ) {
 
             Image(
-                painter = painterResource(id = backgroundImage),
+                painter = painterResource(bgImage),
                 contentDescription = null,
                 contentScale = ContentScale.Crop,
                 modifier = Modifier.matchParentSize()
@@ -127,52 +142,45 @@ fun ResultScreen(navController: NavHostController) {
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
 
-                // ---------------- Registration Number (FIXED BACKGROUND) ----------------
+                // ---------------- REG NO (FIXED BG) ----------------
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     OutlinedTextField(
                         value = regNo,
-                        onValueChange = {
-                            regNo = it
-                            updateResultUrl()
-                        },
-                        label = { Text("Registration Number") },
+                        onValueChange = { regNo = it },
+                        label = { Text("Reg. No") },
                         modifier = Modifier.weight(1f),
                         colors = OutlinedTextFieldDefaults.colors(
-                            focusedContainerColor = if (isDark) Color.Black else Color.White,
-                            unfocusedContainerColor = if (isDark) Color.Black else Color.White,
-                            focusedTextColor = if (isDark) Color.White else Color.Black,
-                            unfocusedTextColor = if (isDark) Color.White else Color.Black,
-                            focusedLabelColor = if (isDark) Color.White else Color.Black,
-                            unfocusedLabelColor = if (isDark) Color.White else Color.Black
+                            focusedContainerColor = inputBg,
+                            unfocusedContainerColor = inputBg,
+                            disabledContainerColor = inputBg,
+                            focusedTextColor = inputText,
+                            unfocusedTextColor = inputText,
+                            focusedLabelColor = inputText,
+                            unfocusedLabelColor = inputText,
+                            cursorColor = inputText
                         )
                     )
 
                     Column {
                         IconButton(onClick = {
                             regNo = (regNo.toLongOrNull()?.plus(1)).toString()
-                            updateResultUrl()
                         }) {
                             Icon(Icons.Default.KeyboardArrowUp, null)
                         }
                         IconButton(onClick = {
                             regNo = (regNo.toLongOrNull()?.minus(1)).toString()
-                            updateResultUrl()
                         }) {
                             Icon(Icons.Default.KeyboardArrowDown, null)
                         }
                     }
                 }
 
-                Spacer(modifier = Modifier.height(16.dp))
+                Spacer(Modifier.height(12.dp))
 
-                // ---------------- Semester DROPDOWN (NEW) ----------------
+                // ---------------- SEMESTER (FIXED BG) ----------------
                 var expanded by remember { mutableStateOf(false) }
 
-                ExposedDropdownMenuBox(
-                    expanded = expanded,
-                    onExpandedChange = { expanded = !expanded },
-                    modifier = Modifier.fillMaxWidth()
-                ) {
+                ExposedDropdownMenuBox(expanded, { expanded = !expanded }) {
                     OutlinedTextField(
                         readOnly = true,
                         value = selectedSemester.ifBlank { "Select Semester" },
@@ -181,25 +189,24 @@ fun ResultScreen(navController: NavHostController) {
                         trailingIcon = {
                             ExposedDropdownMenuDefaults.TrailingIcon(expanded)
                         },
-                        modifier = Modifier.menuAnchor(),
+                        modifier = Modifier.menuAnchor().fillMaxWidth(),
                         colors = OutlinedTextFieldDefaults.colors(
-                            focusedContainerColor = if (isDark) Color.Black else Color.White,
-                            unfocusedContainerColor = if (isDark) Color.Black else Color.White,
-                            focusedTextColor = if (isDark) Color.White else Color.Black,
-                            unfocusedTextColor = if (isDark) Color.White else Color.Black
+                            focusedContainerColor = inputBg,
+                            unfocusedContainerColor = inputBg,
+                            disabledContainerColor = inputBg,
+                            focusedTextColor = inputText,
+                            unfocusedTextColor = inputText,
+                            focusedLabelColor = inputText,
+                            unfocusedLabelColor = inputText
                         )
                     )
 
-                    ExposedDropdownMenu(
-                        expanded = expanded,
-                        onDismissRequest = { expanded = false }
-                    ) {
-                        semesters.forEach { sem ->
+                    ExposedDropdownMenu(expanded, { expanded = false }) {
+                        semesters.forEach {
                             DropdownMenuItem(
-                                text = { Text("Semester $sem") },
+                                text = { Text("Semester $it") },
                                 onClick = {
-                                    selectedSemester = sem
-                                    updateResultUrl()
+                                    selectedSemester = it
                                     expanded = false
                                 }
                             )
@@ -207,92 +214,77 @@ fun ResultScreen(navController: NavHostController) {
                     }
                 }
 
-                Spacer(modifier = Modifier.height(16.dp))
+                Spacer(Modifier.height(16.dp))
 
-                // ---------------- Download + WebView ----------------
-                resultUrl?.let { url ->
+                Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
                     Button(
                         onClick = {
-                            try {
-                                val request = DownloadManager.Request(Uri.parse(url))
-                                    .setTitle("Result_$regNo")
-                                    .setNotificationVisibility(
-                                        DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED
-                                    )
-                                    .setDestinationInExternalPublicDir(
-                                        Environment.DIRECTORY_DOWNLOADS,
-                                        "Result_$regNo.pdf"
-                                    )
-
-                                val dm =
-                                    context.getSystemService(Context.DOWNLOAD_SERVICE) as DownloadManager
-                                dm.enqueue(request)
-
-                                Toast.makeText(context, "Downloading PDF...", Toast.LENGTH_SHORT).show()
-                            } catch (e: Exception) {
-                                Toast.makeText(context, "Download failed", Toast.LENGTH_SHORT).show()
+                            if (regNo.isBlank() || selectedSemester.isBlank()) {
+                                Toast.makeText(context, "Fill all fields", Toast.LENGTH_SHORT).show()
+                            } else {
+                                isLoading = true
+                                buildResultUrl()
                             }
                         },
-                        modifier = Modifier.fillMaxWidth()
-                    ) {
-                        Text("Save PDF")
-                    }
+                        modifier = Modifier.weight(1f)
+                    ) { Text("Check Result") }
 
-                    Spacer(modifier = Modifier.height(16.dp))
-                    ResultWebView(url)
+                    Button(
+                        onClick = { navController.navigate("bulk_result") },
+                        modifier = Modifier.weight(1f)
+                    ) { Text("Check Bulk Result") }
+                }
+
+                Spacer(Modifier.height(12.dp))
+
+                if (isLoading) CircularProgressIndicator()
+
+                resultUrl?.let { url ->
+                    Spacer(Modifier.height(12.dp))
+                    AndroidView(
+                        factory = { ctx ->
+                            WebView(ctx).apply {
+                                webViewClient = object : WebViewClient() {
+                                    override fun onPageFinished(view: WebView?, url: String?) {
+                                        isLoading = false
+                                    }
+                                }
+                                settings.javaScriptEnabled = true
+                                settings.domStorageEnabled = true
+                                settings.useWideViewPort = true
+                                settings.loadWithOverviewMode = true
+                                settings.builtInZoomControls = true
+                                settings.displayZoomControls = false
+                                loadUrl(url)
+                            }
+                        },
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .height(500.dp)
+                    )
                 }
             }
         }
     }
 }
 
-@Composable
-fun ResultWebView(url: String) {
-    AndroidView(
-        factory = { context ->
-            WebView(context).apply {
-                webViewClient = WebViewClient()
-                settings.javaScriptEnabled = true
-                settings.loadWithOverviewMode = true
-                settings.useWideViewPort = true
-                settings.builtInZoomControls = true
-                settings.displayZoomControls = false
-                loadUrl(url)
-            }
-        },
-        update = { it.loadUrl(url) },
-        modifier = Modifier
-            .fillMaxWidth()
-            .height(500.dp)
-    )
-}
+// ---------------- HELPERS ----------------
 
-suspend fun fetchSemesterLinks(jsonUrl: String): Map<String, String>? {
-    return withContext(Dispatchers.IO) {
+suspend fun fetchSemesterLinks(jsonUrl: String): Map<String, String>? =
+    withContext(Dispatchers.IO) {
         try {
-            val jsonText = URL(jsonUrl).readText()
-            val json = JSONObject(jsonText)
+            val json = JSONObject(URL(jsonUrl).readText())
             val map = mutableMapOf<String, String>()
-            json.keys().forEach { key ->
-                map[key] = json.getString(key)
+            json.keys().forEach {
+                map[it] = json.getJSONObject(it).toString()
             }
             map
-        } catch (e: Exception) {
+        } catch (_: Exception) {
             null
         }
     }
-}
 
-fun convertSemesterToRoman(sem: String): String {
-    return when (sem) {
-        "1" -> "I"
-        "2" -> "II"
-        "3" -> "III"
-        "4" -> "IV"
-        "5" -> "V"
-        "6" -> "VI"
-        "7" -> "VII"
-        "8" -> "VIII"
-        else -> sem
-    }
-}
+fun convertSemesterToRoman(sem: String) = mapOf(
+    "1" to "I", "2" to "II", "3" to "III", "4" to "IV",
+    "5" to "V", "6" to "VI", "7" to "VII", "8" to "VIII"
+)[sem] ?: sem

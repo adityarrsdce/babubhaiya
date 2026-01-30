@@ -14,8 +14,8 @@ android {
         applicationId = "com.babu.appp"
         minSdk = 24
         targetSdk = 35
-        versionCode = 7
-        versionName = "1.2.7"
+        versionCode = 8
+        versionName = "2.0.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -62,6 +62,7 @@ dependencies {
     implementation(libs.firebase.crashlytics.buildtools)
     implementation(libs.androidx.compose.material3)
     implementation(libs.androidx.compose.animation)
+    implementation(libs.androidx.compose.animation.core)
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
     implementation("io.ktor:ktor-client-core:2.3.4")
@@ -101,7 +102,9 @@ dependencies {
     implementation("com.google.android.play:app-update-ktx:2.1.0")
 
     implementation("com.airbnb.android:lottie-compose:6.4.0")
+    implementation("com.airbnb.android:lottie-compose:6.3.0")
 
+    implementation("org.jsoup:jsoup:1.17.2")
 
 
 

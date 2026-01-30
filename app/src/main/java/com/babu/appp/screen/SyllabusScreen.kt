@@ -1,7 +1,8 @@
 package com.babu.appp.screen
 
 import android.content.Context
-import androidx.compose.foundation.isSystemInDarkTheme
+import android.net.ConnectivityManager
+import android.net.NetworkCapabilities
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.text.selection.SelectionContainer
@@ -9,6 +10,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowDropDown
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.luminance
@@ -27,11 +29,9 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import java.net.URL
 
-/* ===================== CACHE CONFIG ===================== */
+/* ===================== CACHE ===================== */
 
 private const val PREF_SYLLABUS = "syllabus_cache"
-private const val CACHE_TIME_KEY = "syllabus_cache_time"
-private const val CACHE_VALIDITY = 24 * 60 * 60 * 1000L // 24 hours
 
 /* ===================== DATA ===================== */
 
@@ -60,42 +60,34 @@ fun SyllabusScreen() {
     val appBarColor = if (isDark) Color(0xFF1C1C1C) else Color(0xFFE5D1B5)
     val appBarTextColor = if (isDark) Color.White else Color.Black
 
-    /* ---------------- LOAD BRANCHES (CACHE + AUTO REFRESH) ---------------- */
+    /* ---------------- LOAD BRANCHES ---------------- */
 
     LaunchedEffect(Unit) {
-        val now = System.currentTimeMillis()
-        val cachedTime = prefs.getLong(CACHE_TIME_KEY, 0L)
-        val cachedJson = prefs.getString("branches", null)
-
-        val json = if (cachedJson != null && now - cachedTime < CACHE_VALIDITY) {
-            cachedJson
-        } else {
-            val fresh = fetchJson(
-                "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/syllabus/btech/branch_list.json"
-            )
-            prefs.edit()
-                .putString("branches", fresh)
-                .putLong(CACHE_TIME_KEY, now)
-                .apply()
-            fresh
-        }
-
+        val json = smartFetch(
+            context,
+            "branches",
+            "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/syllabus/btech/branch_list.json"
+        )
         branches = Gson().fromJson(json, BranchWrapper::class.java).branches
     }
+
+    /* ---------------- LOAD SEMESTERS ---------------- */
 
     LaunchedEffect(selectedBranch) {
         if (selectedBranch.isNotEmpty()) {
             branches[selectedBranch]?.let { url ->
-                val json = cachedFetch(context, selectedBranch, url)
+                val json = smartFetch(context, selectedBranch, url)
                 semesters = Gson().fromJson(json, SemesterWrapper::class.java).semesters
             }
         }
     }
 
+    /* ---------------- LOAD SUBJECTS ---------------- */
+
     LaunchedEffect(selectedSemester) {
         if (selectedSemester.isNotEmpty()) {
             semesters[selectedSemester]?.let { url ->
-                val json = cachedFetch(context, selectedSemester, url)
+                val json = smartFetch(context, selectedSemester, url)
                 val type = object : TypeToken<SubjectMap>() {}.type
                 subjects = Gson().fromJson(json, type)
             }
@@ -116,7 +108,8 @@ fun SyllabusScreen() {
         Column(
             modifier = Modifier
                 .padding(padding)
-                .padding(16.dp)
+                .padding(16.dp),
+            horizontalAlignment = Alignment.CenterHorizontally
         ) {
 
             Dropdown("Select Branch", branches.keys.toList(), selectedBranch) {
@@ -161,7 +154,6 @@ fun SyllabusScreen() {
 
                         Spacer(Modifier.height(8.dp))
 
-                        /* ✅ USER CAN SELECT & COPY TEXT MANUALLY */
                         SelectionContainer {
                             Text(
                                 text = parseBoldText(text),
@@ -179,73 +171,36 @@ fun SyllabusScreen() {
     }
 }
 
-/* ===================== DROPDOWN ===================== */
+/* ===================== SMART FETCH ===================== */
 
-@Composable
-fun Dropdown(
-    label: String,
-    items: List<String>,
-    selected: String,
-    onSelect: (String) -> Unit
-) {
-    var expanded by remember { mutableStateOf(false) }
+suspend fun smartFetch(context: Context, key: String, url: String): String {
+    val prefs = context.getSharedPreferences(PREF_SYLLABUS, Context.MODE_PRIVATE)
+    val cached = prefs.getString(key, null)
 
-    Box {
-        OutlinedButton(
-            modifier = Modifier.fillMaxWidth(),
-            onClick = { expanded = true }
-        ) {
-            Text(if (selected.isEmpty()) label else selected)
-            Spacer(Modifier.weight(1f))
-            Icon(Icons.Default.ArrowDropDown, null)
+    return if (isInternetAvailable(context)) {
+        try {
+            val fresh = fetchJson(url)
+            prefs.edit().putString(key, fresh).apply()
+            fresh
+        } catch (e: Exception) {
+            cached ?: ""
         }
-
-        DropdownMenu(expanded, { expanded = false }) {
-            items.forEach {
-                DropdownMenuItem(
-                    text = { Text(it) },
-                    onClick = {
-                        onSelect(it)
-                        expanded = false
-                    }
-                )
-            }
-        }
+    } else {
+        cached ?: ""
     }
 }
 
-/* ===================== BANNER AD ===================== */
-
-@Composable
-fun BannerAd(adUnitId: String) {
-    AndroidView(
-        factory = { ctx ->
-            AdView(ctx).apply {
-                setAdSize(AdSize.BANNER)
-                this.adUnitId = adUnitId
-                loadAd(AdRequest.Builder().build())
-            }
-        },
-        modifier = Modifier
-            .fillMaxWidth()
-            .height(50.dp)
-    )
+fun isInternetAvailable(context: Context): Boolean {
+    val cm = context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+    val network = cm.activeNetwork ?: return false
+    val caps = cm.getNetworkCapabilities(network) ?: return false
+    return caps.hasCapability(NetworkCapabilities.NET_CAPABILITY_INTERNET)
 }
 
 /* ===================== HELPERS ===================== */
 
 suspend fun fetchJson(url: String): String =
     withContext(Dispatchers.IO) { URL(url).readText() }
-
-suspend fun cachedFetch(context: Context, key: String, url: String): String {
-    val prefs = context.getSharedPreferences(PREF_SYLLABUS, Context.MODE_PRIVATE)
-    val cached = prefs.getString(key, null)
-    if (cached != null) return cached
-
-    val fresh = fetchJson(url)
-    prefs.edit().putString(key, fresh).apply()
-    return fresh
-}
 
 fun parseBoldText(input: String): AnnotatedString =
     buildAnnotatedString {
@@ -262,3 +217,64 @@ fun parseBoldText(input: String): AnnotatedString =
             } else append(input[i++])
         }
     }
+
+/* ===================== DROPDOWN ===================== */
+
+@Composable
+fun Dropdown(
+    label: String,
+    items: List<String>,
+    selected: String,
+    onSelect: (String) -> Unit
+) {
+    var expanded by remember { mutableStateOf(false) }
+
+    Box(
+        modifier = Modifier.fillMaxWidth(),
+        contentAlignment = Alignment.Center
+    ) {
+
+        OutlinedButton(
+            modifier = Modifier.fillMaxWidth(0.95f),
+            onClick = { expanded = true }
+        ) {
+            Text(if (selected.isEmpty()) label else selected)
+            Spacer(Modifier.weight(1f))
+            Icon(Icons.Default.ArrowDropDown, null)
+        }
+
+        DropdownMenu(
+            expanded = expanded,
+            onDismissRequest = { expanded = false },
+            modifier = Modifier.fillMaxWidth(0.95f)
+        ) {
+            items.forEach {
+                DropdownMenuItem(
+                    text = { Text(it) },
+                    onClick = {
+                        onSelect(it)
+                        expanded = false
+                    }
+                )
+            }
+        }
+    }
+}
+
+/* ===================== BANNER ===================== */
+
+@Composable
+fun BannerAd(adUnitId: String) {
+    AndroidView(
+        factory = { ctx ->
+            AdView(ctx).apply {
+                setAdSize(AdSize.BANNER)
+                this.adUnitId = adUnitId
+                loadAd(AdRequest.Builder().build())
+            }
+        },
+        modifier = Modifier
+            .fillMaxWidth()
+            .height(50.dp)
+    )
+}
