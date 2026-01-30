@@ -1,6 +1,10 @@
 package com.babu.appp.screen
 
+import android.app.DownloadManager
+import android.content.Context
 import android.net.Uri
+import android.os.Environment
+import android.webkit.WebViewClient
 import android.widget.Toast
 import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.Image
@@ -8,6 +12,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowDropDown
+import androidx.compose.material.icons.filled.Download
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -20,15 +25,15 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.ui.viewinterop.AndroidView
 import com.babu.appp.R
+import com.babu.appp.loading.LoadingAnimation
 import com.google.android.gms.ads.MobileAds
 import com.google.gson.Gson
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.net.URL
-import com.google.accompanist.web.WebView
-import com.google.accompanist.web.rememberWebViewState
 
 // ---------------- DATA ----------------
 
@@ -59,6 +64,12 @@ fun PyqScreen() {
     var semesterMap by remember { mutableStateOf<Map<String, String>>(emptyMap()) }
     var subjectYearMap by remember { mutableStateOf<SubjectYearMap>(emptyMap()) }
 
+    var showPdfViewer by remember { mutableStateOf(false) }
+    var pdfUrlToView by remember { mutableStateOf("") }
+    var pdfLoading by remember { mutableStateOf(true) }
+
+    BackHandler(enabled = showPdfViewer) { showPdfViewer = false }
+
     val isDark = MaterialTheme.colorScheme.background.luminance() < 0.5f
     val cardBgColor =
         if (isDark) Color(0xFF2C2C2C).copy(alpha = 0.95f)
@@ -68,12 +79,7 @@ fun PyqScreen() {
     val appBarColor = if (isDark) Color(0xFF1C1C1C) else Color(0xFFE5D1B5)
     val appBarTextColor = if (isDark) Color.White else Color.Black
 
-    var showPdfViewer by remember { mutableStateOf(false) }
-    var pdfUrlToView by remember { mutableStateOf("") }
-
-    BackHandler(enabled = showPdfViewer) { showPdfViewer = false }
-
-    // ---------- LOAD BRANCH LIST ----------
+    // ---------- LOAD BRANCH ----------
 
     LaunchedEffect(Unit) {
         MobileAds.initialize(context)
@@ -83,19 +89,11 @@ fun PyqScreen() {
                 val json = fetchJsonFromUrl(
                     "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/PYQ/Btech/Branch_list.json"
                 )
-
-                if (json.isBlank()) throw Exception("Empty data")
-
                 val data = Gson().fromJson(json, BranchList::class.java)
                 branchMap = data.branches
                 branches = data.branches.keys.toList()
-
             } catch (e: Exception) {
-                Toast.makeText(
-                    context,
-                    "Data uploading / upgrade soon",
-                    Toast.LENGTH_LONG
-                ).show()
+                Toast.makeText(context, "Data uploading soon", Toast.LENGTH_LONG).show()
             }
         }
     }
@@ -106,8 +104,6 @@ fun PyqScreen() {
 
         val viewerUrl =
             "https://docs.google.com/gview?embedded=true&url=${Uri.encode(pdfUrlToView)}"
-
-        val webViewState = rememberWebViewState(viewerUrl)
 
         Scaffold(
             topBar = {
@@ -126,12 +122,41 @@ fun PyqScreen() {
                 )
             }
         ) { padding ->
-            WebView(
-                state = webViewState,
-                modifier = Modifier
-                    .fillMaxSize()
-                    .padding(padding)
-            )
+
+            Box(Modifier.fillMaxSize()) {
+
+                AndroidView(
+                    factory = { ctx ->
+                        android.webkit.WebView(ctx).apply {
+
+                            webViewClient = object : WebViewClient() {
+                                override fun onPageFinished(view: android.webkit.WebView?, url: String?) {
+                                    pdfLoading = false
+                                }
+                            }
+
+                            settings.javaScriptEnabled = true
+                            settings.domStorageEnabled = true
+                            settings.useWideViewPort = true
+                            settings.loadWithOverviewMode = true
+                            settings.builtInZoomControls = true
+                            settings.displayZoomControls = false
+
+                            isVerticalScrollBarEnabled = true
+                            isHorizontalScrollBarEnabled = true
+
+                            loadUrl(viewerUrl)
+                        }
+                    },
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .padding(padding)
+                )
+
+                if (pdfLoading) {
+                    LoadingAnimation()
+                }
+            }
         }
 
     } else {
@@ -177,91 +202,46 @@ fun PyqScreen() {
                         horizontalAlignment = Alignment.CenterHorizontally
                     ) {
 
-                        Text(
-                            "Download PYQ",
+                        Text("Download PYQ",
                             fontSize = 24.sp,
                             fontWeight = FontWeight.Bold,
                             color = textColor
                         )
 
-                        DropdownSelector("Select Branch", branches, selectedBranch) { branch ->
-
-                            val url = branchMap[branch]
-
-                            if (url == null) {
-                                Toast.makeText(
-                                    context,
-                                    "Data uploading / upgrade soon",
-                                    Toast.LENGTH_LONG
-                                ).show()
-                                return@DropdownSelector
-                            }
-
-                            selectedBranch = branch
-                            selectedSemester = ""
-                            selectedSubject = ""
-                            selectedYear = ""
-
+                        DropdownSelector("Select Branch", branches, selectedBranch) {
+                            val url = branchMap[it] ?: return@DropdownSelector
+                            selectedBranch = it
                             semesters = emptyList()
                             subjects = emptyList()
                             years = emptyList()
 
                             coroutineScope.launch {
-                                try {
-                                    val json = fetchJsonFromUrl(url)
-                                    val data = Gson().fromJson(json, SemesterList::class.java)
-                                    semesterMap = data.semesters
-                                    semesters = data.semesters.keys.toList()
-                                } catch (e: Exception) {
-                                    Toast.makeText(
-                                        context,
-                                        "Data uploading / upgrade soon",
-                                        Toast.LENGTH_LONG
-                                    ).show()
-                                }
+                                val json = fetchJsonFromUrl(url)
+                                val data = Gson().fromJson(json, SemesterList::class.java)
+                                semesterMap = data.semesters
+                                semesters = data.semesters.keys.toList()
                             }
                         }
 
                         if (semesters.isNotEmpty())
-                            DropdownSelector("Select Semester", semesters, selectedSemester) { sem ->
-
-                                val url = semesterMap[sem]
-
-                                if (url == null) {
-                                    Toast.makeText(
-                                        context,
-                                        "Data uploading / upgrade soon",
-                                        Toast.LENGTH_LONG
-                                    ).show()
-                                    return@DropdownSelector
-                                }
-
-                                selectedSemester = sem
-                                selectedSubject = ""
-                                selectedYear = ""
+                            DropdownSelector("Select Semester", semesters, selectedSemester) {
+                                val url = semesterMap[it] ?: return@DropdownSelector
+                                selectedSemester = it
                                 subjects = emptyList()
                                 years = emptyList()
 
                                 coroutineScope.launch {
-                                    try {
-                                        val json = fetchJsonFromUrl(url)
-                                        subjectYearMap =
-                                            Gson().fromJson(json, SubjectYearMap::class.java)
-                                        subjects = subjectYearMap.keys.toList()
-                                    } catch (e: Exception) {
-                                        Toast.makeText(
-                                            context,
-                                            "Data uploading soon",
-                                            Toast.LENGTH_LONG
-                                        ).show()
-                                    }
+                                    val json = fetchJsonFromUrl(url)
+                                    subjectYearMap =
+                                        Gson().fromJson(json, SubjectYearMap::class.java)
+                                    subjects = subjectYearMap.keys.toList()
                                 }
                             }
 
                         if (subjects.isNotEmpty())
-                            DropdownSelector("Select Subject", subjects, selectedSubject) { sub ->
-                                selectedSubject = sub
-                                years = subjectYearMap[sub]?.keys?.toList() ?: emptyList()
+                            DropdownSelector("Select Subject", subjects, selectedSubject) {
+                                selectedSubject = it
+                                years = subjectYearMap[it]?.keys?.toList() ?: emptyList()
                             }
 
                         if (years.isNotEmpty())
@@ -271,29 +251,45 @@ fun PyqScreen() {
 
                         val pdfUrl = subjectYearMap[selectedSubject]?.get(selectedYear) ?: ""
 
-                        Button(
-                            onClick = {
-                                if (pdfUrl.isEmpty()) {
-                                    Toast.makeText(
-                                        context,
-                                        "FData uploading soon",
-                                        Toast.LENGTH_SHORT
-                                    ).show()
-                                } else {
-                                    pdfUrlToView = pdfUrl
-                                    showPdfViewer = true
-                                }
-                            },
+                        Row(
+                            horizontalArrangement = Arrangement.spacedBy(8.dp),
                             modifier = Modifier.fillMaxWidth()
                         ) {
-                            Text("View")
+
+                            Button(
+                                onClick = {
+                                    if (pdfUrl.isEmpty()) {
+                                        Toast.makeText(context, "Data uploading soon", Toast.LENGTH_SHORT).show()
+                                    } else {
+                                        pdfUrlToView = pdfUrl
+                                        showPdfViewer = true
+                                    }
+                                },
+                                modifier = Modifier.weight(1f)
+                            ) {
+                                Text("View")
+                            }
+
+                            Button(
+                                onClick = {
+                                    if (pdfUrl.isEmpty()) {
+                                        Toast.makeText(context, "Data uploading soon", Toast.LENGTH_SHORT).show()
+                                    } else {
+                                        downloadPdf(context, pdfUrl)
+                                    }
+                                },
+                                modifier = Modifier.weight(1f)
+                            ) {
+                                Text("Download")
+                            }
                         }
+
+                    }
                     }
                 }
             }
         }
     }
-}
 
 // ---------------- DROPDOWN ----------------
 
@@ -320,11 +316,7 @@ fun DropdownSelector(
             Icon(Icons.Default.ArrowDropDown, null)
         }
 
-        DropdownMenu(
-            expanded = expanded,
-            onDismissRequest = { expanded = false },
-            modifier = Modifier.fillMaxWidth(0.95f)
-        ) {
+        DropdownMenu(expanded, { expanded = false }) {
             options.forEach {
                 DropdownMenuItem(
                     text = { Text(it) },
@@ -342,3 +334,24 @@ fun DropdownSelector(
 
 suspend fun fetchJsonFromUrl(url: String): String =
     withContext(Dispatchers.IO) { URL(url).readText() }
+
+// ---------------- DOWNLOAD ----------------
+
+fun downloadPdf(context: Context, url: String) {
+    if (url.isEmpty()) return
+
+    val request = DownloadManager.Request(Uri.parse(url))
+        .setTitle("PYQ Download")
+        .setNotificationVisibility(
+            DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED
+        )
+        .setDestinationInExternalPublicDir(
+            Environment.DIRECTORY_DOWNLOADS,
+            "PYQ_${System.currentTimeMillis()}.pdf"
+        )
+
+    val dm = context.getSystemService(Context.DOWNLOAD_SERVICE) as DownloadManager
+    dm.enqueue(request)
+
+    Toast.makeText(context, "Downloading...", Toast.LENGTH_SHORT).show()
+}
