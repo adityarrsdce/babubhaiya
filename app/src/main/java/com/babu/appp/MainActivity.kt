@@ -41,7 +41,7 @@ import com.google.firebase.messaging.FirebaseMessaging
 
 class MainActivity : ComponentActivity() {
 
-    // Firebase analytics instance
+    // Firebase analytics instance.
     private lateinit var firebaseAnalytics: FirebaseAnalytics
 
     // Interstitial ad object
