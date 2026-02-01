@@ -1,3 +1,16 @@
 {
-  "BTech": "https://abzxtsqmzuqzedpaaxsf.supabase.co/storage/v1/object/public/pyq-pdfs/holiyday/IMG-20260103-WA0009.jpg"
+  "months": {
+    "January": [
+      { "date": "14 Jan", "name": "Makar Sankranti" },
+      { "date": "26 Jan", "name": "Republic Day" }
+    ],
+    "February": [
+      { "date": "14 Feb", "name": "Valentine's Day / Chocolate Day" },
+      { "date": "26 Feb", "name": "Maha Shivratri" }
+    ],
+    "March": [
+      { "date": "08 Mar", "name": "Holi" },
+      { "date": "29 Mar", "name": "Good Friday" }
+    ]
+  }
 }
