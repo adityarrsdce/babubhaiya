@@ -6,8 +6,10 @@
     "MECHANICAL": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/syllabus/btech/MECHANICLA/semester_list.json",
     "CIVIL": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/syllabus/btech/CIVIL/semester_list.json",
     "IT": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/syllabus/btech/IT/semester_list.json",
-    "CHEMICAL": ""
+    "CHEMICAL": "",
+    "AI ML" : "https://github.com/adityarrsdce/babubhaiya/blob/main/syllabus/btech/AI_ML/semester_list.json"
   }
 }
+
 
 
