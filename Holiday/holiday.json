@@ -1,16 +1,55 @@
 {
+  "year": 2026,
+  "organization": "Bihar Engineering University, Patna",
   "months": {
     "January": [
+      { "date": "01 Jan", "name": "New Year" },
       { "date": "14 Jan", "name": "Makar Sankranti" },
+      { "date": "23 Jan", "name": "Netaji Subhash Chandra Bose Jayanti" },
       { "date": "26 Jan", "name": "Republic Day" }
     ],
     "February": [
-      { "date": "14 Feb", "name": "Valentine's Day / Chocolate Day" },
-      { "date": "26 Feb", "name": "Maha Shivratri" }
+      { "date": "01 Feb", "name": "Vasant Panchami" },
+      { "date": "04 Feb", "name": "Guru Ravidas Jayanti" },
+      { "date": "15 Feb", "name": "Maha Shivratri" }
     ],
     "March": [
-      { "date": "08 Mar", "name": "Holi" },
-      { "date": "29 Mar", "name": "Good Friday" }
+      { "date": "02–04 Mar", "name": "Holi (Dhulandi & Extended Holiday)" },
+      { "date": "21 Mar", "name": "Id-ul-Fitr" },
+      { "date": "22 Mar", "name": "Bihar Diwas" },
+      { "date": "26 Mar", "name": "Ram Navami" },
+      { "date": "27 Mar", "name": "Mahavir Jayanti" },
+      { "date": "31 Mar", "name": "Good Friday" }
+    ],
+    "April": [
+      { "date": "03 Apr", "name": "Id-ul-Fitr (Extended)" },
+      { "date": "14 Apr", "name": "Dr. B. R. Ambedkar Jayanti" },
+      { "date": "23 Apr", "name": "Ram Navami (Chaiti)" },
+      { "date": "25 Apr", "name": "Hanuman Jayanti" }
+    ],
+    "May": [
+      { "date": "01 May", "name": "Labour Day" },
+      { "date": "28 May", "name": "Buddha Purnima" }
+    ],
+    "August": [
+      { "date": "04 Aug", "name": "Muharram" },
+      { "date": "15 Aug", "name": "Independence Day" },
+      { "date": "26 Aug", "name": "Janmashtami" },
+      { "date": "28 Aug", "name": "Parsi New Year" }
+    ],
+    "September": [
+      { "date": "04 Sep", "name": "Teachers’ Day" },
+      { "date": "17–20 Sep", "name": "Durga Puja" }
+    ],
+    "October": [
+      { "date": "02 Oct", "name": "Gandhi Jayanti" },
+      { "date": "08–16 Oct", "name": "Durga Puja / Diwali / Chhath Puja" }
+    ],
+    "November": [
+      { "date": "24 Nov", "name": "Guru Nanak Jayanti" }
+    ],
+    "December": [
+      { "date": "25–31 Dec", "name": "Christmas & Winter Vacation" }
     ]
   }
 }
