@@ -1,7 +1,4 @@
-{
-  "year": 2026,
-  "organization": "Bihar Engineering University, Patna",
-  "months": {
+ "months": {
     "January": [
       { "date": "01 Jan", "name": "New Year" },
       { "date": "14 Jan", "name": "Makar Sankranti" },
@@ -52,4 +49,3 @@
       { "date": "25–31 Dec", "name": "Christmas & Winter Vacation" }
     ]
   }
-}
