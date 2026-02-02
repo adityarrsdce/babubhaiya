@@ -1,3 +1,4 @@
+ {
  "months": {
     "January": [
       { "date": "01 Jan", "name": "New Year" },
@@ -49,3 +50,4 @@
       { "date": "25–31 Dec", "name": "Christmas & Winter Vacation" }
     ]
   }
+}
