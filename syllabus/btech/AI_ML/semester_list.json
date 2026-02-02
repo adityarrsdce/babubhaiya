@@ -11,3 +11,16 @@
     "Semester 8": "https://github.com/adityarrsdce/babubhaiya/blob/main/syllabus/btech/AI_ML/sem8.json"
   }
 }
+
+{
+  "semesters": {
+    "Semester 1": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/syllabus/btech/CSE/sem1.json",
+    "Semester 2": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/syllabus/btech/CSE/sem2.json",
+    "Semester 3": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/syllabus/btech/CSE/sem3.json",
+    "Semester 4": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/syllabus/btech/CSE/sem4.json",
+   "Semester 5": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/syllabus/btech/CSE/sem5.json",
+    "Semester 6": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/syllabus/btech/CSE/sem6.json",
+    "Semester 7": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/refs/heads/main/syllabus/btech/CSE/sem7.json",
+    "Semester 8": "https://raw.githubusercontent.com/adityarrsdce/babubhaiya/main/syllabus/btech/cse/sem8.json"
+  }
+}
